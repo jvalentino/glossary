@@ -2,13 +2,116 @@
 
 When writing documentation involving software, I seem to always find myself adding a glossary to avoid cluttering with definitions and explanations. I started this wiki as an attempt to consolidate all those different glossaries, and give a single place I can link to with common definitions.
 
-### Android OS
+-----------
 
-> Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets. Android is developed by a consortium of developers known as the Open Handset Alliance and commercially sponsored by Google. It was unveiled in November 2007, with the first commercial Android device, the HTC Dream, being launched in September 2008.
->
-> Most versions of Android are proprietary. The core components are taken from the Android Open Source Project (AOSP), which is free and open-source software (FOSS) primarily licensed under the Apache License. When Android is installed on devices, ability to modify the otherwise FOSS software is usually restricted, either by not providing the corresponding source code or preventing reinstallation through technical measures, rendering the installed version proprietary. Most Android devices ship with additional proprietary software pre-installed,[4] most notably Google Mobile Services (GMS)[5] which includes core apps such as Google Chrome, the digital distribution platform Google Play, and associated Google Play Services development platform.
+- [Concepts](#concepts)
+    + [API Endpoints](#api-endpoints)
+    + [API Key](#api-key)
+    + [Application Programming Interface (API)](#application-programming-interface-api)
+    + [Application Software](#application-software)
+    + [App store](#app-store)
+    + [Artificially Intelligent Image Recognition](#artificially-intelligent-image-recognition)
+    + [Availability](#availability)
+    + [Backend](#backend)
+    + [Backend-for-Frontend](#backend-for-frontend)
+    + [Big Data](#big-data)
+    + [CAP Theorem](#cap-theorem)
+    + [Centralized Logging](#centralized-logging)
+    + [Cloud Computing](#cloud-computing)
+    + [Cloud Native](#cloud-native)
+    + [Command Query Response Segregation (CQRS)](#command-query-response-segregation-cqrs)
+    + [Computer Hardware](#computer-hardware)
+    + [Computer Vision](#computer-vision)
+    + [Consumer-Driven Contracts](#consumer-driven-contracts)
+    + [Consumption Economics](#consumption-economics)
+    + [Continuous Delivery (CD)](#continuous-delivery-cd)
+    + [Continuous Integration (CI)](#continuous-integration-ci)
+    + [Database](#database)
+    + [Data Fusion](#data-fusion)
+    + [Desktop Computer](#desktop-computer)
+    + [DevOps](#devops)
+    + [Distributed Cache](#distributed-cache)
+    + [Domain Driven Design](#domain-driven-design)
+    + [Domain Model](#domain-model)
+    + [End User](#end-user)
+    + [Event Aggregator](#event-aggregator)
+    + [Event Bus](#event-bus)
+    + [Event-driven Architecture](#event-driven-architecture)
+    + [Eventual Consistency](#eventual-consistency)
+    + [Fallacies of Distributed Computing](#fallacies-of-distributed-computing)
+    + [Gherkin](#gherkin)
+    + [Graphical User Interface (GUI)](#graphical-user-interface-gui)
+    + [High Availability (HA)](#high-availability-ha)
+    + [Iceberg Analogy](#iceberg-analogy)
+    + [ISO 8601](#iso-8601)
+    + [Laptop](#laptop)
+    + [JSON](#json)
+    + [Microservices](#microservices)
+    + [Monitoring and Alerting](#monitoring-and-alerting)
+    + [Non-functional requirement](#non-functional-requirement)
+    + [NoSQL Database](#nosql-database)
+    + [One-to-many (data model)](#one-to-many-data-model)
+    + [Operating System](#operating-system)
+    + [Partition Tolerance](#partition-tolerance)
+    + [Relational Database Management System (RDBMS)](#relational-database-management-system-rdbms)
+    + [REST](#rest)
+    + [Service-oriented architecture (SOA)](#service-oriented-architecture-soa)
+    + [Session](#session)
+    + [Smart Device](#smart-device)
+    + [Smartphone](#smartphone)
+    + [Smartglasses](#smartglasses)
+    + [Smartwatch](#smartwatch)
+    + [SMS](#sms)
+    + [Software](#software)
+    + [Software as a Service (SaaS)](#software-as-a-service-saas)
+    + [Software Development Kit (SDK)](#software-development-kit-sdk)
+    + [Sub-system](#sub-system)
+    + [Superuser](#superuser)
+    + [System](#system)
+    + [System Administrator](#system-administrator)
+    + [System Architecture](#system-architecture)
+    + [Terms of Service](#terms-of-service)
+    + [Use Case](#use-case)
+    + [User Experience (UX)](#user-experience-ux)
+- [Technologies](#technologies)
+    + [Alertmanager](#alertmanager)
+    + [Apache (PHP enabled)](#apache-php-enabled)
+    + [Android OS](#android-os)
+    + [Bluetooth](#bluetooth)
+    + [Chrome](#chrome)
+    + [CSS](#css)
+    + [Docker](#docker)
+    + [Docker Compose](#docker-compose)
+    + [Eclipse](#eclipse)
+    + [Elasticsearch](#elasticsearch)
+    + [FluentD](#fluentd)
+    + [Google Chat](#google-chat)
+    + [Gradle](#gradle)
+    + [Grafana](#grafana)
+    + [Groovy](#groovy)
+    + [HTML5](#html5)
+    + [iOS](#ios)
+    + [Java](#java)
+    + [JavaScript](#javascript)
+    + [Kafka](#kafka)
+    + [Kibana](#kibana)
+    + [Mac OS](#mac-os)
+    + [Microsoft Teams](#microsoft-teams)
+    + [New Relic](#new-relic)
+    + [Nginx](#nginx)
+    + [Prometheus](#prometheus)
+    + [PromQL](#promql)
+    + [Redis](#redis)
+    + [Slack](#slack)
+    + [Spring](#spring)
+    + [Spring Boot](#spring-boot)
+    + [Visual Studio Code](#visual-studio-code)
+    + [Windows OS](#windows-os)
+    + [ZooKeeper](#zookeeper)
 
- https://en.wikipedia.org/wiki/Android_(operating_system)
+------------
+
+# Concepts
 
 ### API Endpoints
 
@@ -74,12 +177,6 @@ https://www.mobilelive.ca/blog/why-backend-for-frontend-application-architecture
 
 https://en.wikipedia.org/wiki/Big_data
 
-### Bluetooth
-
-> Bluetooth is a short-range wireless technology standard that is used for exchanging data between fixed and mobile devices over short distances and building personal area networks (PANs). It employs UHF radio waves in the ISM bands, from 2.402 GHz to 2.48 GHz.[3] It is mainly used as an alternative to wire connections, to exchange files between nearby portable devices and connect cell phones and music players with wireless headphones. In the most widely used mode, transmission power is limited to 2.5 milliwatts, giving it a very short range of up to 10 metres (33 ft).
-
-https://en.wikipedia.org/wiki/Bluetooth
-
 ### CAP Theorem
 
 > No distributed system is safe from network failures, thus network partitioning generally has to be tolerated.[7][8] In the presence of a partition, one is then left with two options: consistency or availability. When choosing consistency over availability, the system will return an error or a time out if particular information cannot be guaranteed to be up to date due to network partitioning. When choosing availability over consistency, the system will always process the query and try to return the most recent available version of the information, even if it cannot guarantee it is up to date due to network partitioning.
@@ -138,11 +235,31 @@ https://en.wikipedia.org/wiki/Computer_hardware
 
 https://en.wikipedia.org/wiki/Computer_vision
 
+### Consumer-Driven Contracts
+
+> Consumer-Driven Contracts are a pattern for evolving services. In Consumer-Driven Contracts, each consumer captures their expectations of the provider in a separate contract. All of these contracts are shared with the provider so they gain insight into the obligations they must fulfill for each individual client. The provider can create a test suite to validate these obligations. This lets them stay agile and make changes that do not affect any consumer, and pinpoint consumers that will be affected by a required change for deeper planning and discussion.
+
+https://thoughtworks.github.io/pacto/patterns/cdc/
+
 ### Consumption Economics
 
 > If you're a tech company, the most dramatic effect of megatrends like cloud computing, managed services, and the rise of consumer technology won't be felt in your company's product line. The true disruption will be to your business model. Future customers won't want to pay you high prices out of big CapEx budgets anymore. They will expect lower cloud prices paid from OpEx budgets only when and if they successfully consume the business value of your products.How your company reacts to this risk shift could either accelerate the commoditization of your products or lead you to a new stage of profitable growth. For the first time, the tools are on the table to truly eliminate barriers of cost and complexity created by the last generation of tech. Consumption Economics is the owner's manual for tech company executives who want to drive their company successfully into the next one.
 
 https://www.amazon.com/Consumption-Economics-New-Rules-Tech/dp/0984213031
+
+### Continuous Delivery (CD)
+
+> Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time. You’re doing continuous delivery when: [1] - Your software is deployable throughout its lifecycle - Your team prioritizes keeping the software deployable over working on new features - Anybody can get fast, automated feedback on the production readiness of their systems any time somebody makes a change to them - You can perform push-button deployments of any version of the software to any environment on demand You achieve continuous delivery by continuously integrating the software done by the development team, building executables, and running automated tests on those executables to detect problems. Furthermore you push the executables into increasingly production-like environments to ensure the software will work in production. To do this you use a Deployment Pipeline.
+
+ https://martinfowler.com/bliki/ContinuousDelivery.html
+
+### Continuous Integration (CI)
+
+> Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible. Many teams find that this approach leads to significantly reduced integration problems and allows a team to develop cohesive software more rapidly.
+
+https://www.martinfowler.com/articles/continuousIntegration.html
+
+
 
 ### Database
 
@@ -218,6 +335,10 @@ http://www.rribbit.org/eventbus.html
 
 https://en.wikipedia.org/wiki/Event-driven_architecture
 
+### Eventual Consistency
+
+A concept in AP systems of CAP Theorem, refers to that the state will not be instantaneously consistent. If A goes to B and is help up because C is down, the state at C is missing A, but will eventually have it when B is back up. ATMs are an example of an eventually consistent system, as if you are overdrawn, the bank will eventually come and get their money.
+
 ### Fallacies of Distributed Computing
 
 > The fallacies of distributed computing are a set of assertions made by L Peter Deutsch and others at Sun Microsystems describing false assumptions that programmers new to distributed applications invariably make. The fallacies are[1] The network is reliable;Latency is zero;Bandwidth is infinite;The network is secure;Topology doesn't change;There is one administrator;Transport cost is zero;The network is homogeneous.
@@ -230,12 +351,6 @@ https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing
 > Gherkin is a plain-text language with a simple structure. It is designed to be easy to learn by non-programmers, yet structured enough to allow concise description of test scenarios and examples to illustrate business rules in most real-world domains.
 
 https://support.smartbear.com/cucumberstudio/docs/bdd/write-gherkin-scenarios.html
-
-### Google Chat
-
-> Google Chat (formerly known as Hangouts Chat) is a communication service developed by Google. Initially designed for teams and business environments, it has since been made available for general consumers. It provides direct message, group conversations, and spaces, which allow users to create and assign tasks and share files in a central place in addition to chatting. It can be accessed through its own website and app or through the Gmail website and app.
-
-https://en.wikipedia.org/wiki/Google_Chat
 
 ### Graphical User Interface (GUI)
 
@@ -257,11 +372,11 @@ https://en.wikipedia.org/wiki/High_availability
 
 https://blogs.missouristate.edu/international/2020/05/27/idiom-tip-of-the-iceberg/
 
-### iOS
+### ISO 8601
 
-> iOS (formerly iPhone OS[10]) is a mobile operating system created and developed by Apple Inc. exclusively for its hardware. It is the operating system that powers many of the company's mobile devices, including the iPhone; the term also included the versions running on iPads until iPadOS was introduced in 2019, as well as on the iPod Touch devices, which were discontinued in mid-2022.[11] It is the world's second-most widely installed mobile operating system, after Android. It is the basis for three other operating systems made by Apple: iPadOS, tvOS, and watchOS. It is proprietary software, although some parts of it are open source under the Apple Public Source License and other licenses.[12]
+> ISO 8601 Data elements and interchange formats – Information interchange – Representation of dates and times is an international standard covering the exchange of date- and time-related data. It was issued by the International Organization for Standardization (ISO) and was first published in 1988. The purpose of this standard is to provide an unambiguous and well-defined method of representing dates and times, so as to avoid misinterpretation of numeric representations of dates and times, particularly when data are transferred between countries with different conventions for writing numeric dates and times.
 
-https://en.wikipedia.org/wiki/IOS
+https://en.wikipedia.org/wiki/ISO_8601
 
 ### Laptop
 
@@ -269,15 +384,11 @@ https://en.wikipedia.org/wiki/IOS
 
 https://en.wikipedia.org/wiki/Laptop
 
-### Mac OS
+### JSON
 
-> The family of Mac operating systems developed by Apple Inc. includes the graphical user interface-based operating systems it has designed for use with its Mac series of personal computers since 1984, as well as the related system software it once created for compatible third-party systems.
->
-> In 1984, Apple debuted the operating system that is now known as the "Classic" Mac OS with its release of the original Macintosh System Software. The system, rebranded "Mac OS" in 1996, was preinstalled on every Macintosh until 2002 and offered on Macintosh clones for a short time in the 1990s. Noted for its ease of use, it was also criticized for its lack of modern technologies compared to its competitors.[1][2]
->
-> The current Mac operating system is macOS, originally named "Mac OS X" until 2012 and then "OS X" until 2016.[3] Developed between 1997 and 2001 after Apple's purchase of NeXT, Mac OS X brought an entirely new architecture based on NeXTSTEP, a Unix system, that eliminated many of the technical challenges that the classic Mac OS faced. The current macOS is preinstalled with every Mac and receives a major update annually.[4] It is the basis of Apple's current system software for its other devices – iOS, iPadOS, watchOS, and tvOS.[5]
+> In computing, JavaScript Object Notation (JSON) is an open-standard file format that uses human-readable text to transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value). It is a very common data format used for asynchronous browser–server communication, including as a replacement for XML in some AJAX-style systems
 
-https://en.wikipedia.org/wiki/Mac_operating_systems
+ https://en.wikipedia.org/wiki/JSON
 
 ### Microservices
 
@@ -285,23 +396,11 @@ https://en.wikipedia.org/wiki/Mac_operating_systems
 
 https://en.wikipedia.org/wiki/Microservices
 
-### Microsoft Teams
-
-> Microsoft Teams is a proprietary business communication platform developed by Microsoft, as part of the Microsoft 365 family of products. Teams primarily competes with the similar service Slack, offering workspace chat and videoconferencing, file storage, and application integration.[7] Teams is replacing other Microsoft-operated business messaging and collaboration platforms, including Skype for Business and Microsoft Classroom. Throughout the COVID-19 pandemic, Teams, and other software such as Zoom and Google Meet, gained much interest as many meetings moved to a virtual environment.[8] As of 2022, it has about 270 million monthly users.[9]
-
-https://en.wikipedia.org/wiki/Microsoft_Teams
-
 ### Monitoring and Alerting
 
 > A set of software components used for data collection, their processing, and presentation is called a monitoring system. Alerting is the capability of a monitoring system to detect and notify the operators about meaningful events that denote a grave change of state.
 
 https://www.oreilly.com/library/view/effective-monitoring-and/9781449333515/ch01.html
-
-### New Relic
-
-> New Relic is a Software as a Service offering that focuses on performance and availability monitoring. It uses a standardized Apdex (application performance index) score to set and rate application performance across the environment in a unified manner.
-
-https://www.ibm.com/garage/method/practices/manage/tool_new_relic/
 
 ### Non-functional requirement
 
@@ -357,17 +456,17 @@ https://en.wikipedia.org/wiki/Relational_database#RDBMS
 
 https://en.wikipedia.org/wiki/Representational_state_transfer
 
+### Service-oriented architecture (SOA)
+
+>  A service-oriented architecture (SOA) is a style of software design where services are provided to the other components by application components, through a communication protocol over a network. The basic principles of service-oriented architecture are independent of vendors, products and technologies.[1] A service is a discrete unit of functionality that can be accessed remotely and acted upon and updated independently, such as retrieving a credit card statement online. A service has four properties according to one of many definitions of SOA: 1. It logically represents a business activity with a specified outcome. 2. It is self-contained. 3. It is a black box for its consumers. 4. It may consist of other underlying services.
+
+https://en.wikipedia.org/wiki/Service-oriented_architecture
+
 ### Session
 
 > In computer science and networking in particular, a session is a time-delimited two-way link, a practical (relatively high) layer in the tcp/ip protocol enabling interactive expression and information exchange between two or more communication devices or ends – be they computers, automated systems, or live active users (see login session). A session is established at a certain point in time, and then ‘torn down’ - brought to an end - at some later point. An established communication session may involve more than one message in each direction. A session is typically stateful, meaning that at least one of the communicating parties needs to hold current state information and save information about the session history to be able to communicate, as opposed to stateless communication, where the communication consists of independent requests with responses.
 
 https://en.wikipedia.org/wiki/Session_(computer_science)
-
-### Slack
-
-> Slack is an instant messaging program designed by Slack Technologies and owned by Salesforce. Although Slack was developed for professional and organizational communications, it has been adopted as a community platform.[12] Users can communicate with voice calls, video calls, text messaging, media and files in private chats or as part of communities called "workspaces". Slack also uses IRC-style features such as persistent chat rooms (channels) organized by topic, private groups, and direct messaging. In addition to these online communication features, Slack integrates with other software.[13] Slack runs on Windows, Linux, macOS, Android, Windows Phone and iOS.
-
-https://en.wikipedia.org/wiki/Slack_(software)
 
 ### Smart Device
 
@@ -475,6 +574,206 @@ https://en.wikipedia.org/wiki/Use_case
 
 https://en.wikipedia.org/wiki/User_experience
 
+# Technologies
+
+### Alertmanager
+
+> The Alertmanager handles alerts sent by client applications such as the Prometheus server. It takes care of deduplicating, grouping, and routing them to the correct receiver integration such as email, PagerDuty, or OpsGenie. It also takes care of silencing and inhibition of alerts.
+
+ https://prometheus.io/docs/alerting/alertmanager/
+
+### Apache (PHP enabled)
+
+> The Apache HTTP Server Project is an effort to develop and maintain an open-source HTTP server for modern operating systems including UNIX and Windows. The goal of this project is to provide a secure, efficient and extensible server that provides HTTP services in sync with the current HTTP standards. 
+
+ https://httpd.apache.org/
+
+### Android OS
+
+> Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets. Android is developed by a consortium of developers known as the Open Handset Alliance and commercially sponsored by Google. It was unveiled in November 2007, with the first commercial Android device, the HTC Dream, being launched in September 2008.
+>
+> Most versions of Android are proprietary. The core components are taken from the Android Open Source Project (AOSP), which is free and open-source software (FOSS) primarily licensed under the Apache License. When Android is installed on devices, ability to modify the otherwise FOSS software is usually restricted, either by not providing the corresponding source code or preventing reinstallation through technical measures, rendering the installed version proprietary. Most Android devices ship with additional proprietary software pre-installed,[4] most notably Google Mobile Services (GMS)[5] which includes core apps such as Google Chrome, the digital distribution platform Google Play, and associated Google Play Services development platform.
+
+ https://en.wikipedia.org/wiki/Android_(operating_system)
+
+### Bluetooth
+
+> Bluetooth is a short-range wireless technology standard that is used for exchanging data between fixed and mobile devices over short distances and building personal area networks (PANs). It employs UHF radio waves in the ISM bands, from 2.402 GHz to 2.48 GHz.[3] It is mainly used as an alternative to wire connections, to exchange files between nearby portable devices and connect cell phones and music players with wireless headphones. In the most widely used mode, transmission power is limited to 2.5 milliwatts, giving it a very short range of up to 10 metres (33 ft).
+
+https://en.wikipedia.org/wiki/Bluetooth
+
+### Chrome
+
+> Google Chrome is a freeware web browser developed by Google LLC. It was first released on September 2, 2008 for Microsoft Windows, and was later ported to Linux, macOS, iOS and Android. Google Chrome is also the main component of Chrome OS, where it serves as a platform for running web apps.
+
+ https://en.wikipedia.org/wiki/Google_Chrome
+
+### CSS
+
+> Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
+
+https://en.wikipedia.org/wiki/Cascading_Style_Sheets
+
+### Docker
+
+> Docker is a computer program that performs operating-system-level virtualization, also known as "containerization". It was first released in 2013 and is developed by Docker, Inc. Docker is used to run software packages called "containers". Containers are isolated from each other and bundle their own application, tools, libraries and configuration files; they can communicate with each other through well-defined channels. All containers are run by a single operating system kernel and are thus more lightweight than virtual machines. Containers are created from "images" that specify their precise contents. Images are often created by combining and modifying standard images downloaded from public repositories.
+
+https://en.wikipedia.org/wiki/Docker_(software)
+
+### Docker Compose
+
+> Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration.
+
+https://docs.docker.com/compose/overview/
+
+### Eclipse
+
+> Eclipse is an integrated development environment (IDE) used in computer programming, and is the most widely used Java IDE. It contains a base workspace and an extensible plug-in system for customizing the environment. Eclipse is written mostly in Java and its primary use is for developing Java applications, but it may also be used to develop applications in other programming languages via plug-ins, including Ada, ABAP, C, C++, C#, Clojure, COBOL, D, Erlang, Fortran, Groovy, Haskell, JavaScript, Julia, Lasso, Lua, NATURAL, Perl, PHP, Prolog, Python, R, Ruby (including Ruby on Rails framework), Rust, Scala, and Scheme. It can also be used to develop documents with LaTeX (via a TeXlipse plug-in) and packages for the software Mathematica. Development environments include the Eclipse Java development tools (JDT) for Java and Scala, Eclipse CDT for C/C++, and Eclipse PDT for PHP, among others
+
+https://en.wikipedia.org/wiki/Eclipse_(software)
+
+### Elasticsearch
+
+> Elasticsearch is a search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. Elasticsearch is developed in Java and is released as open source under the terms of the Apache License. Official clients are available in Java, .NET (C#), PHP, Python, Apache Groovy, Ruby and many other languages. According to the DB-Engines ranking, Elasticsearch is the most popular enterprise search engine followed by Apache Solr, also based on Lucene.
+
+https://en.wikipedia.org/wiki/Elasticsearch
+
+### FluentD 
+
+> Fluentd is a Big Data tool for semi- or un-structured data sets. Like Apache Kafka, it analyzes event logs, application logs, and clickstreams. According to Suonsyrjä and Mikkonen, the "core idea of Fluentd is to be the unifying layer between different types of log inputs and outputs.", Fluentd is available on Linux, Mac OSX, and Windows. 
+
+https://en.wikipedia.org/wiki/Fluentd
+
+### Google Chat
+
+> Google Chat (formerly known as Hangouts Chat) is a communication service developed by Google. Initially designed for teams and business environments, it has since been made available for general consumers. It provides direct message, group conversations, and spaces, which allow users to create and assign tasks and share files in a central place in addition to chatting. It can be accessed through its own website and app or through the Gmail website and app.
+
+https://en.wikipedia.org/wiki/Google_Chat
+
+### Gradle
+
+> Gradle is an open-source build automation system that builds upon the concepts of Apache Ant and Apache Maven and introduces a Groovy-based domain-specific language (DSL) instead of the XML form used by Apache Maven for declaring the project configuration. Gradle uses a directed acyclic graph ("DAG") to determine the order in which tasks can be run.
+
+https://en.wikipedia.org/wiki/Gradle
+
+### Grafana
+
+> Grafana is an open-source, general purpose dashboard and graph composer, which runs as a web application.
+
+ https://wiki.archlinux.org/index.php/Grafana
+
+### Groovy
+
+> Apache Groovy is a Java-syntax-compatible object-oriented programming language for the Java platform. It is both a static and dynamic language with features similar to those of Python, Ruby, Perl, and Smalltalk. It can be used as both a programming language and a scripting language for the Java Platform, is compiled to Java virtual machine (JVM) bytecode, and interoperates seamlessly with other Java code and libraries. Groovy uses a curly-bracket syntax similar to Java's. Groovy supports closures, multiline strings, and expressions embedded in strings. Much of Groovy's power lies in its AST transformations, triggered through annotations.
+
+https://en.wikipedia.org/wiki/Apache_Groovy
+
+### HTML5
+
+> HTML 5 (formerly spelled HTML5[a]) is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current major version of the HTML standard, and subsumes XHTML. It currently exists in two standardized forms: HTML 5.2 Recommendation by the World Wide Web Consortium (W3C, a broad coalition of organizations), intended primarily for Web content developers; and HTML Living Standard by WHATWG (a small consortium of four browser vendors), intended primarily for browser developers, though it also exists in an abridged Web developer version. There are minor conflicts between the two groups' specifications.
+
+ https://en.wikipedia.org/wiki/HTML5
+
+### iOS
+
+> iOS (formerly iPhone OS[10]) is a mobile operating system created and developed by Apple Inc. exclusively for its hardware. It is the operating system that powers many of the company's mobile devices, including the iPhone; the term also included the versions running on iPads until iPadOS was introduced in 2019, as well as on the iPod Touch devices, which were discontinued in mid-2022.[11] It is the world's second-most widely installed mobile operating system, after Android. It is the basis for three other operating systems made by Apple: iPadOS, tvOS, and watchOS. It is proprietary software, although some parts of it are open source under the Apple Public Source License and other licenses.[12]
+
+https://en.wikipedia.org/wiki/IOS
+
+### Java
+
+> Java is a set of computer software and specifications developed by James Gosling at Sun Microsystems, which was later acquired by the Oracle Corporation, that provides a system for developing application software and deploying it in a cross-platform computing environment. Java is used in a wide variety of computing platforms from embedded devices and mobile phones to enterprise servers and supercomputers. Java applets, which are less common than standalone Java applications, were commonly run in secure, sandboxed environments to provide many features of native applications through being embedded in HTML pages. It's still possible to run Java in web browsers after most of them having dropped support for Java's VM.
+
+https://en.wikipedia.org/wiki/Java_(software_platform)
+
+### JavaScript
+
+> JavaScript, often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multiparadigm.
+
+https://en.wikipedia.org/wiki/JavaScript
+
+### Kafka
+
+> Apache Kafka is an open-source stream-processing software platform developed by the Apache Software Foundation, written in Scala and Java. The project aims to provide a unified, highthroughput, low-latency platform for handling real-time data feeds. Its storage layer is essentially a "massively scalable pub/sub message queue designed as a distributed transaction log," making it highly valuable for enterprise infrastructures to process streaming data. Additionally, Kafka connects to external systems (for data import/export) via Kafka Connect and provides Kafka Streams, a Java stream processing library.
+
+https://en.wikipedia.org/wiki/Apache_Kafka
+
+### Kibana
+
+> Kibana is an open source data visualization plugin for Elasticsearch. It provides visualization capabilities on top of the content indexed on an Elasticsearch cluster. Users can create bar, line and scatter plots, or pie charts and maps on top of large volumes of data.
+
+https://en.wikipedia.org/wiki/Kibana
+
+### Mac OS
+
+> The family of Mac operating systems developed by Apple Inc. includes the graphical user interface-based operating systems it has designed for use with its Mac series of personal computers since 1984, as well as the related system software it once created for compatible third-party systems.
+>
+> In 1984, Apple debuted the operating system that is now known as the "Classic" Mac OS with its release of the original Macintosh System Software. The system, rebranded "Mac OS" in 1996, was preinstalled on every Macintosh until 2002 and offered on Macintosh clones for a short time in the 1990s. Noted for its ease of use, it was also criticized for its lack of modern technologies compared to its competitors.[1][2]
+>
+> The current Mac operating system is macOS, originally named "Mac OS X" until 2012 and then "OS X" until 2016.[3] Developed between 1997 and 2001 after Apple's purchase of NeXT, Mac OS X brought an entirely new architecture based on NeXTSTEP, a Unix system, that eliminated many of the technical challenges that the classic Mac OS faced. The current macOS is preinstalled with every Mac and receives a major update annually.[4] It is the basis of Apple's current system software for its other devices – iOS, iPadOS, watchOS, and tvOS.[5]
+
+https://en.wikipedia.org/wiki/Mac_operating_systems
+
+### Microsoft Teams
+
+> Microsoft Teams is a proprietary business communication platform developed by Microsoft, as part of the Microsoft 365 family of products. Teams primarily competes with the similar service Slack, offering workspace chat and videoconferencing, file storage, and application integration.[7] Teams is replacing other Microsoft-operated business messaging and collaboration platforms, including Skype for Business and Microsoft Classroom. Throughout the COVID-19 pandemic, Teams, and other software such as Zoom and Google Meet, gained much interest as many meetings moved to a virtual environment.[8] As of 2022, it has about 270 million monthly users.[9]
+
+https://en.wikipedia.org/wiki/Microsoft_Teams
+
+### New Relic
+
+> New Relic is a Software as a Service offering that focuses on performance and availability monitoring. It uses a standardized Apdex (application performance index) score to set and rate application performance across the environment in a unified manner.
+
+https://www.ibm.com/garage/method/practices/manage/tool_new_relic/
+
+### Nginx
+
+> Nginx (stylized as NGINX, NGiИX or nginx) is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.
+
+https://en.wikipedia.org/wiki/Nginx
+
+### Prometheus
+
+> Prometheus is an open-source systems monitoring and alerting toolkit originally built at SoundCloud. Since its inception in 2012, many companies and organizations have adopted Prometheus, and the project has a very active developer and user community. It is now a standalone open source project and maintained independently of any company. To emphasize this, and to clarify the project's governance structure, Prometheus joined the Cloud Native Computing Foundation in 2016 as the second hosted project, after Kubernetes.
+
+https://prometheus.io/docs/introduction/overview/
+
+### PromQL
+
+> PromQL is a built in query-language made for Prometheus.
+
+https://timber.io/blog/promql-for-humans/
+
+### Redis
+
+> Redis (Remote Dictionary Server) is an open-source in-memory data structure project implementing a distributed, in-memory key-value database with optional durability. Redis supports different kinds of abstract data structures, such as strings, lists, maps, sets, sorted sets, hyperloglogs, bitmaps, streams and spatial indexes.
+
+ https://en.wikipedia.org/wiki/Redis
+
+### Slack
+
+> Slack is an instant messaging program designed by Slack Technologies and owned by Salesforce. Although Slack was developed for professional and organizational communications, it has been adopted as a community platform.[12] Users can communicate with voice calls, video calls, text messaging, media and files in private chats or as part of communities called "workspaces". Slack also uses IRC-style features such as persistent chat rooms (channels) organized by topic, private groups, and direct messaging. In addition to these online communication features, Slack integrates with other software.[13] Slack runs on Windows, Linux, macOS, Android, Windows Phone and iOS.
+
+https://en.wikipedia.org/wiki/Slack_(software)
+
+### Spring
+
+> The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE (Enterprise Edition) platform. Although the framework does not impose any specific programming model, it has become popular in the Java community as an addition to, or even replacement for the Enterprise JavaBeans (EJB) model. The Spring Framework is open source.
+
+https://en.wikipedia.org/wiki/Spring_Framework
+
+### Spring Boot
+
+> Spring Boot is designed to get you up and running as quickly as possible, with minimal upfront configuration of Spring. Spring Boot takes an opinionated view of building production ready applications.
+
+https://spring.io/
+
+### Visual Studio Code
+
+> Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring. It is also customizable, so users can change the editor's theme, keyboard shortcuts, and preferences.
+
+https://en.wikipedia.org/wiki/Visual_Studio_Code
+
 ### Windows OS
 
 > Windows is a group of several proprietary graphical operating system families developed and marketed by Microsoft. Each family caters to a certain sector of the computing industry, for example, Windows NT for consumers, Windows Server for servers, and Windows IoT for embedded systems. Defunct Windows families include Windows 9x, Windows Mobile, and Windows Phone.*
@@ -486,9 +785,9 @@ https://en.wikipedia.org/wiki/User_experience
 
 https://en.wikipedia.org/wiki/Microsoft_Windows
 
+### ZooKeeper
 
+> Apache ZooKeeper is a software project of the Apache Software Foundation. It is essentially a centralized service for distributed systems to a hierarchical key-value store, which is used to provide a distributed configuration service, synchronization service, and naming registry for large distributed systems. ZooKeeper was a sub-project of Hadoop but is now a top-level Apache project in its own right.
 
-
-
-
+ https://en.wikipedia.org/wiki/Apache_ZooKeeper
 
