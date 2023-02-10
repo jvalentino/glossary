@@ -19,6 +19,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [Centralized Logging](#centralized-logging)
     + [Cloud Computing](#cloud-computing)
     + [Cloud Native](#cloud-native)
+    + [Code Formatting](#code-formatting)
     + [Command Query Response Segregation (CQRS)](#command-query-response-segregation-cqrs)
     + [Computer Hardware](#computer-hardware)
     + [Computer Vision](#computer-vision)
@@ -26,8 +27,11 @@ When writing documentation involving software, I seem to always find myself addi
     + [Consumption Economics](#consumption-economics)
     + [Continuous Delivery (CD)](#continuous-delivery-cd)
     + [Continuous Integration (CI)](#continuous-integration-ci)
+    + [Cycle Time](#cycle-time)
     + [Database](#database)
+    + [Data](#data)
     + [Data Fusion](#data-fusion)
+    + [Deployment Frequency](#deployment-frequency)
     + [Desktop Computer](#desktop-computer)
     + [DevOps](#devops)
     + [Distributed Cache](#distributed-cache)
@@ -45,9 +49,11 @@ When writing documentation involving software, I seem to always find myself addi
     + [Iceberg Analogy](#iceberg-analogy)
     + [ISO 8601](#iso-8601)
     + [Laptop](#laptop)
+    + [Lead Time](#lead-time)
     + [JSON](#json)
     + [Microservices](#microservices)
     + [Monitoring and Alerting](#monitoring-and-alerting)
+    + [MTTR](#mttr)
     + [Non-functional requirement](#non-functional-requirement)
     + [NoSQL Database](#nosql-database)
     + [One-to-many (data model)](#one-to-many-data-model)
@@ -57,6 +63,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [REST](#rest)
     + [Service-oriented architecture (SOA)](#service-oriented-architecture-soa)
     + [Session](#session)
+    + [Service/Integration Testing](#serviceintegration-testing)
     + [Smart Device](#smart-device)
     + [Smartphone](#smartphone)
     + [Smartglasses](#smartglasses)
@@ -65,14 +72,20 @@ When writing documentation involving software, I seem to always find myself addi
     + [Software](#software)
     + [Software as a Service (SaaS)](#software-as-a-service-saas)
     + [Software Development Kit (SDK)](#software-development-kit-sdk)
+    + [Static Application Security Testing (SAST)](#static-application-security-testing-sast)
+    + [Static Code Analysis](#static-code-analysis)
     + [Sub-system](#sub-system)
     + [Superuser](#superuser)
     + [System](#system)
     + [System Administrator](#system-administrator)
     + [System Architecture](#system-architecture)
     + [Terms of Service](#terms-of-service)
+    + [Test Coverage](#test-coverage)
+    + [UI Testing](#ui-testing)
+    + [Unit Testing](#unit-testing)
     + [Use Case](#use-case)
     + [User Experience (UX)](#user-experience-ux)
+    + [Version Control](#version-control)
 - [Technologies](#technologies)
     + [Alertmanager](#alertmanager)
     + [Apache (PHP enabled)](#apache-php-enabled)
@@ -207,6 +220,12 @@ https://en.wikipedia.org/wiki/Cloud_computing
 
 https://en.wikipedia.org/wiki/Cloud_native_computing
 
+### Code Formatting
+
+> Refers to coding style, which is a set of conventions on how to format code. For instance, what do you call your variables? Do you use spaces or tabs for indentation? Where do you put comments? Consistently using the same style throughout your code makes it easier to read. Consistently using the same style throughout your code makes it easier to read. Code that is easy to read is easier to understand by you as well as by potential collaborators. Therefore, adhering to a coding style reduces the risk of mistakes and makes it easier to work together on software.
+
+https://the-turing-way.netlify.app/reproducible-research/code-quality/code-quality-style.html
+
 ### Command Query Response Segregation (CQRS)
 
 > CQRS stands for Command Query Responsibility Segregation. It's a pattern that I first heard described by Greg Young. At its heart is the notion that you can use a different model to update information than the model you use to read information. For some situations, this separation can be valuable, but beware that for most systems CQRS adds risky complexity.*
@@ -259,13 +278,25 @@ https://www.amazon.com/Consumption-Economics-New-Rules-Tech/dp/0984213031
 
 https://www.martinfowler.com/articles/continuousIntegration.html
 
+### Cycle Time
 
+> Another relevant metric is cycle time, which is the time a team spends working on an item until it is ready for shipment. In the development world, cycle time is the time from when developers make a commit to the moment it's deployed to production. This key DevOps metric helps project leads and engineering managers better understand what works well in the development pipeline. As a result, they can better align their work with the expectations of stakeholders and customers, ensuring their team's ship faster.
+
+https://www.atlassian.com/devops/frameworks/devops-metrics
 
 ### Database
 
 > In computing, a database is an organized collection of data stored and accessed electronically. Small databases can be stored on a file system, while large databases are hosted on computer clusters or cloud storage. The design of databases spans formal techniques and practical considerations, including data modeling, efficient data representation and storage, query languages, security and privacy of sensitive data, and distributed computing issues, including supporting concurrent access and fault tolerance.
 
 https://en.wikipedia.org/wiki/Database
+
+### Data
+
+> Computer data is information processed or stored by a computer. This information may be in the form of text documents, images, audio clips, software programs, or other types of data. Computer data may be processed by the computer's CPU and is stored in files and folders on the computer's hard disk.
+>
+> At its most rudimentary level, computer data is a bunch of ones and zeros, known as binary data. Because all computer data is in binary format, it can be created, processed, saved, and stored digitally. This allows data to be transferred from one computer to another using a network connection or various media devices. It also does not deteriorate over time or lose quality after being used multiple times.
+
+https://techterms.com/definition/data
 
 ### Data Fusion
 
@@ -278,6 +309,20 @@ https://en.wikipedia.org/wiki/Database
 > The concept of data fusion has origins in the evolved capacity of humans and animals to incorporate information from multiple senses to improve their ability to survive. For example, a combination of sight, touch, smell, and taste may indicate whether a substance is edible.[2]
 
 https://en.wikipedia.org/wiki/Data_fusion
+
+### Deployment Frequency
+
+> In a nutshell, Deployment frequency measures how often code is deployed to production. This metric is correlated with both the speed and the quality of your engineering team.
+>
+>
+> Deployment frequency is a good indicator of teams’ response time, cohesiveness, capabilities, and overall efficiency. It is one of the most interesting speed metrics for an organization to work on to ensure that software is delivered early and often.
+>
+>
+> This metric analyzes how much value gets delivered to end-users and customers and how quickly your team can provide that value (in the form of bug fixes, new functionality, or other code changes). On the one hand, a Deployment frequency that is too low indicates that there may be broader issues, like inefficient processes, lack of people, or inadequate team structure. On the other hand, a high deployment frequency shows that your team can quickly provide value and react to feedback or changes.
+>
+> Your teams’ goal should be to increase your deployment frequency because it means that you are incentivizing your team to deploy more regularly and with smaller changes. Smaller and regular release sizes are easier to understand, and it’s faster to test, deploy and fix issues. More frequent deployments also mean shorter and more effective feedback loops, allowing for faster product iterations.
+
+https://blog.codacy.com/how-to-measure-deployment-frequency/
 
 ### Desktop Computer
 
@@ -384,6 +429,14 @@ https://en.wikipedia.org/wiki/ISO_8601
 
 https://en.wikipedia.org/wiki/Laptop
 
+### Lead Time
+
+> Lead time is the measurement of how much time passes between task creation and when the work is completed. If you’re focused on cycle time alone—that is, the time between when your team starts work on a feature and when it goes to the end users—you’re seeing only a piece of the agile puzzle.
+>
+> Put another way, lead time is a “user point of view” measurement, or how long it takes, from the perspective of the user, for a feature to go from “requested” to “complete.” In contrast, cycle time is a “developer point of view” metric that measures the time between when a programmer starts work and when it’s delivered. Think of it as if you’re ordering a pizza: the clock starts on lead time when you place your order, and it stops when the pizza shows up on your doorstep. But cycle time measures only the time from when the cook starts your order to when it’s in your hands.
+
+https://shortcut.com/blog/lead-time-what-is-it-and-why-should-you-care
+
 ### JSON
 
 > In computing, JavaScript Object Notation (JSON) is an open-standard file format that uses human-readable text to transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value). It is a very common data format used for asynchronous browser–server communication, including as a replacement for XML in some AJAX-style systems
@@ -401,6 +454,12 @@ https://en.wikipedia.org/wiki/Microservices
 > A set of software components used for data collection, their processing, and presentation is called a monitoring system. Alerting is the capability of a monitoring system to detect and notify the operators about meaningful events that denote a grave change of state.
 
 https://www.oreilly.com/library/view/effective-monitoring-and/9781449333515/ch01.html
+
+### MTTR
+
+> MTTR (mean time to recovery or mean time to restore) is the average time it takes to recover from a product or system failure. This includes the full time of the outage—from the time the system or product fails to the time that it becomes fully operational again. It's a key DevOps metric that can be used to measure the stability of a DevOps team, as noted by DevOps Research and Assessment (DORA).
+
+https://www.atlassian.com/incident-management/kpis/common-metrics
 
 ### Non-functional requirement
 
@@ -468,6 +527,14 @@ https://en.wikipedia.org/wiki/Service-oriented_architecture
 
 https://en.wikipedia.org/wiki/Session_(computer_science)
 
+### Service/Integration Testing
+
+> All non-trivial applications will integrate with some other parts (databases, file systems, network calls to other applications). When writing unit tests these are usually the parts you leave out in order to come up with better isolation and faster tests. Still, your application will interact with other parts and this needs to be tested. Integration Tests are there to help. They test the integration of your application with all the parts that live outside of your application.
+>
+> For your automated tests this means you don't just need to run your own application but also the component you're integrating with. If you're testing the integration with a database you need to run a database when running your tests. For testing that you can read files from a disk you need to save a file to your disk and load it in your integration test.
+
+https://martinfowler.com/articles/practical-test-pyramid.html#IntegrationTests
+
 ### Smart Device
 
 > A smart device is an electronic device, generally connected to other devices or networks via different wireless protocols (such as Bluetooth, Zigbee, near-field communication, Wi-Fi, LiFi, or 5G) that can operate to some extent interactively and autonomously. Several notable types of smart devices are smartphones, smart cars, smart thermostats, smart doorbells, smart locks, smart refrigerators, phablets and tablets, smartwatches, smart bands, smart keychains, smart glasses, and many others. The term can also refer to a device that exhibits some properties of ubiquitous computing, including—although not necessarily—machine learning.
@@ -522,6 +589,34 @@ https://en.wikipedia.org/wiki/Software_as_a_service
 
 https://en.wikipedia.org/wiki/Software_development_kit
 
+###  Static Application Security Testing (SAST)
+
+> Static application security testing (SAST) is used to secure software by reviewing the source code of the software to identify sources of vulnerabilities. Although the process of statically analyzing the source code has existed as long as computers have existed, the technique spread to security in the late 90s and the first public discussion of SQL injection in 1998 when Web applications integrated new technologies like JavaScript and Flash.
+>
+>
+> Unlike dynamic application security testing (DAST) tools for black-box testing of application functionality, SAST tools focus on the code content of the application, white-box testing. A SAST tool scans the source code of applications and its components to identify potential security vulnerabilities in their software and architecture. Static analysis tools can detect an estimated 50% of existing security vulnerabilities.
+>
+>
+> In SDLC, SAST is performed early in the development process and at code level, and also when all pieces of code and components are put together in a consistent testing environment. SAST is also used for software quality assurance even if the many resulting false-positive impede its adoption by developers.
+>
+> SAST tools are integrated into the development process to help development teams as they are primarily focusing on developing and delivering software respecting requested specifications. SAST tools, like other security tools, focus on reducing the risk of downtime of applications or that private information stored in applications will not be compromised.
+
+https://en.wikipedia.org/wiki/Static_application_security_testing
+
+### Static Code Analysis
+
+> In computer science, static program analysis (or static analysis) is the analysis of computer programs performed without executing them, in contrast with dynamic program analysis, which is performed on programs during their execution.
+>
+>
+> The term is usually applied to analysis performed by an automated tool, with human analysis typically being called "program understanding", program comprehension, or code review. In the last of these, software inspection and software walkthroughs are also used. In most cases the analysis is performed on some version of a program's source code, and, in other cases, on some form of its object code.
+>
+>
+> The sophistication of the analysis performed by tools varies from those that only consider the behavior of individual statements and declarations, to those that include the complete source code of a program in their analysis. The uses of the information obtained from the analysis vary from highlighting possible coding errors (e.g., the lint tool) to formal methods that mathematically prove properties about a given program (e.g., its behavior matches that of its specification).
+>
+> Software metrics and reverse engineering can be described as forms of static analysis. Deriving software metrics and static analysis are increasingly deployed together, especially in creation of embedded systems, by defining so-called software quality objectives.
+
+https://en.wikipedia.org/wiki/Static_program_analysis
+
 ### Sub-system
 
 > A system is a group of interacting or interrelated elements that act according to a set of rules to form a unified whole.[1] A system, surrounded and influenced by its environment, is described by its boundaries, structure and purpose and expressed in its functioning. Systems are the subjects of study of systems theory and other systems sciences.
@@ -562,6 +657,42 @@ https://en.wikipedia.org/wiki/Systems_architecture
 
 https://en.wikipedia.org/wiki/Terms_of_service
 
+### Test Coverage
+
+> Test coverage is defined as a metric in Software Testing that measures the amount of testing performed by a set of test. It will include gathering information about which parts of a program are executed when running the test suite to determine which branches of conditional statements have been taken.
+>
+> In simple terms, it is a technique to ensure that your tests are testing your code or how much of your code you exercised by running the test.
+
+https://www.guru99.com/test-coverage-in-software-testing.html
+
+### UI Testing
+
+> Most applications have some sort of user interface. Typically we're talking about a web interface in the context of web applications. People often forget that a REST API or a command line interface is as much of a user interface as a fancy web user interface.
+>
+>
+> UI tests test that the user interface of your application works correctly. User input should trigger the right actions, data should be presented to the user, the UI state should change as expected.
+>
+>
+> UI Tests and end-to-end tests are sometimes (as in Mike Cohn's case) said to be the same thing. For me this conflates two things that are rather orthogonal concepts.
+>
+>
+> Yes, testing your application end-to-end often means driving your tests through the user interface. The inverse, however, is not true.
+>
+>
+> Testing your user interface doesn't have to be done in an end-to-end fashion. Depending on the technology you use, testing your user interface can be as simple as writing some unit tests for your frontend javascript code with your backend stubbed out.
+>
+> With traditional web applications testing the user interface can be achieved with tools like Selenium. If you consider a REST API to be your user interface you should have everything you need by writing proper integration tests around your API.
+
+https://martinfowler.com/articles/practical-test-pyramid.html#UiTests
+
+### Unit Testing
+
+> A unit test is a way of testing a unit - the smallest piece of code that can be logically isolated in a system. In most programming languages, that is a function, a subroutine, a method or property. The isolated part of the definition is important. In his book "Working Effectively with Legacy Code", author Michael Feathers states that such tests are not unit tests when they rely on external systems: “If it talks to the database, it talks across the network, it touches the file system, it requires system configuration, or it can't be run at the same time as any other test."
+>
+> Modern versions of unit testing can be found in frameworks like JUnit, or testing tools like TestComplete. Look a little further and you will find SUnit, the mother of all unit testing frameworks created by Kent Beck, and a reference in chapter 5 of The Art of Software Testing. Before that, it's mostly a mystery. I asked Jerry Weinberg about his experiences with unit testing -- "We did unit testing in 1956. As far as I knew, it was always done, as long as there were computers".
+
+https://smartbear.com/learn/automated-testing/what-is-unit-testing/
+
 ### Use Case
 
 A use case is a list of actions or event steps typically defining the interactions between a role (known in the Unified Modeling Language (UML) as an actor) and a system to achieve a goal. The actor can be a human or other external system. In systems engineering, use cases are used at a higher level than within software engineering, often representing missions or stakeholder goals. The detailed requirements may then be captured in the Systems Modeling Language (SysML) or as contractual statements.
@@ -573,6 +704,12 @@ https://en.wikipedia.org/wiki/Use_case
 > The user experience (UX) is how a user interacts with and experiences a product, system or service. It includes a person's perceptions of utility, ease of use, and efficiency. Improving user experience is important to most companies, designers, and creators when creating and refining products because negative user experience can diminish the use of the product and, therefore, any desired positive impacts; conversely, designing toward profitability often conflicts with ethical user experience objectives and even causes harm. User experience is subjective. However, the attributes that make up the user experience are objective.
 
 https://en.wikipedia.org/wiki/User_experience
+
+### Version Control
+
+> In software engineering, version control (also known as revision control, source control, or source code management) is a class of systems responsible for managing changes to computer programs, documents, large web sites, or other collections of information. Version control is a component of software configuration management.
+
+https://en.wikipedia.org/wiki/Version_control
 
 # Technologies
 
