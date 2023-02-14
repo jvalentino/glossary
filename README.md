@@ -5,6 +5,7 @@ When writing documentation involving software, I seem to always find myself addi
 -----------
 
 - [Concepts](#concepts)
+    + [Agile](#agile)
     + [API Endpoints](#api-endpoints)
     + [API Key](#api-key)
     + [Application Programming Interface (API)](#application-programming-interface-api)
@@ -12,6 +13,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [App store](#app-store)
     + [Artificially Intelligent Image Recognition](#artificially-intelligent-image-recognition)
     + [Availability](#availability)
+    + [Backlog Grooming](#backlog-grooming)
     + [Backend](#backend)
     + [Backend-for-Frontend](#backend-for-frontend)
     + [Big Data](#big-data)
@@ -27,6 +29,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [Consumption Economics](#consumption-economics)
     + [Continuous Delivery (CD)](#continuous-delivery-cd)
     + [Continuous Integration (CI)](#continuous-integration-ci)
+    + [Continuous Integration (CI) Certification](#continuous-integration-ci-certification)
     + [Cycle Time](#cycle-time)
     + [Database](#database)
     + [Data](#data)
@@ -35,9 +38,11 @@ When writing documentation involving software, I seem to always find myself addi
     + [Desktop Computer](#desktop-computer)
     + [DevOps](#devops)
     + [Distributed Cache](#distributed-cache)
+    + [Distributed Tracing](#distributed-tracing)
     + [Domain Driven Design](#domain-driven-design)
     + [Domain Model](#domain-model)
     + [End User](#end-user)
+    + [Epic](#epic)
     + [Event Aggregator](#event-aggregator)
     + [Event Bus](#event-bus)
     + [Event-driven Architecture](#event-driven-architecture)
@@ -51,6 +56,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [Laptop](#laptop)
     + [Lead Time](#lead-time)
     + [JSON](#json)
+    + [Key Benefits of Scrum](#key-benefits-of-scrum)
     + [Microservices](#microservices)
     + [Monitoring and Alerting](#monitoring-and-alerting)
     + [MTTR](#mttr)
@@ -58,10 +64,15 @@ When writing documentation involving software, I seem to always find myself addi
     + [NoSQL Database](#nosql-database)
     + [One-to-many (data model)](#one-to-many-data-model)
     + [Operating System](#operating-system)
+    + [OWASP Vulnerability](#owasp-vulnerability)
     + [Partition Tolerance](#partition-tolerance)
+    + [Programming by Remote Control](#programming-by-remote-control)
     + [Relational Database Management System (RDBMS)](#relational-database-management-system-rdbms)
     + [REST](#rest)
+    + [Retrospective](#retrospective)
+    + [Scrum](#scrum)
     + [Service-oriented architecture (SOA)](#service-oriented-architecture-soa)
+    + [Sequence Diagram](#sequence-diagram)
     + [Session](#session)
     + [Service/Integration Testing](#serviceintegration-testing)
     + [Smart Device](#smart-device)
@@ -72,13 +83,17 @@ When writing documentation involving software, I seem to always find myself addi
     + [Software](#software)
     + [Software as a Service (SaaS)](#software-as-a-service-saas)
     + [Software Development Kit (SDK)](#software-development-kit-sdk)
+    + [SRE](#sre)
+    + [Standup Meeting](#standup-meeting)
     + [Static Application Security Testing (SAST)](#static-application-security-testing-sast)
     + [Static Code Analysis](#static-code-analysis)
+    + [Story](#story)
     + [Sub-system](#sub-system)
     + [Superuser](#superuser)
     + [System](#system)
     + [System Administrator](#system-administrator)
     + [System Architecture](#system-architecture)
+    + [TDD](#tdd)
     + [Terms of Service](#terms-of-service)
     + [Test Coverage](#test-coverage)
     + [UI Testing](#ui-testing)
@@ -90,41 +105,74 @@ When writing documentation involving software, I seem to always find myself addi
     + [Alertmanager](#alertmanager)
     + [Apache (PHP enabled)](#apache-php-enabled)
     + [Android OS](#android-os)
+    + [AWS](#aws)
     + [Bluetooth](#bluetooth)
+    + [Checkmarx](#checkmarx)
     + [Chrome](#chrome)
     + [CSS](#css)
+    + [Cucumber](#cucumber)
     + [Docker](#docker)
     + [Docker Compose](#docker-compose)
+    + [EC2 (AWS)](#ec2-aws)
     + [Eclipse](#eclipse)
     + [Elasticsearch](#elasticsearch)
     + [FluentD](#fluentd)
+    + [Git Hook](#git-hook)
+    + [Github](#github)
     + [Google Chat](#google-chat)
     + [Gradle](#gradle)
     + [Grafana](#grafana)
     + [Groovy](#groovy)
+    + [H2](#h2)
     + [HTML5](#html5)
     + [iOS](#ios)
     + [Java](#java)
     + [JavaScript](#javascript)
+    + [JCasc](#jcasc)
+    + [Jenkins](#jenkins)
+    + [Jenkins-Jira Integration](#jenkins-jira-integration)
+    + [Jenkins Operations Center](#jenkins-operations-center)
+    + [Jenkins Shared Pipeline Library](#jenkins-shared-pipeline-library)
+    + [Jira](#jira)
+    + [JUnit](#junit)
     + [Kafka](#kafka)
     + [Kibana](#kibana)
+    + [liquibase](#liquibase)
     + [Mac OS](#mac-os)
+    + [Maven](#maven)
     + [Microsoft Teams](#microsoft-teams)
+    + [Micrometer Prometheus Registry](#micrometer-prometheus-registry)
     + [New Relic](#new-relic)
     + [Nginx](#nginx)
+    + [OpenShift](#openshift)
+    + [OWASP Dependency-Check](#owasp-dependency-check)
+    + [Postgres](#postgres)
+    + [PMD](#pmd)
     + [Prometheus](#prometheus)
+    + [Pre-Commit Hook (Git)](#pre-commit-hook-git)
     + [PromQL](#promql)
     + [Redis](#redis)
     + [Slack](#slack)
+    + [SonarQube](#sonarqube)
     + [Spring](#spring)
     + [Spring Boot](#spring-boot)
+    + [Spring Boot Actuator](#spring-boot-actuator)
+    + [Veracode](#veracode)
     + [Visual Studio Code](#visual-studio-code)
     + [Windows OS](#windows-os)
+    + [WireMock](#wiremock)
+    + [Zipkin](#zipkin)
     + [ZooKeeper](#zookeeper)
 
 ------------
 
 # Concepts
+
+### Agile
+
+> Agile is an iterative approach to project management and software development that helps teams deliver value to their customers faster and with fewer headaches. Instead of betting everything on a "big bang" launch, an agile team delivers work in small, but consumable, increments. Requirements, plans, and results are evaluated continuously so teams have a natural mechanism for responding to change quickly. 
+
+https://www.atlassian.com/agile
 
 ### API Endpoints
 
@@ -171,6 +219,12 @@ https://logicai.io/blog/using-artificial-intelligence-ai-image-recognition
 > *The degree to which a system, subsystem or equipment is in a specified operable and committable state at the start of a mission, when the mission is called for at an unknown, i.e. a random, time.**The probability that an item will operate satisfactorily at a given point in time when used under stated conditions in an ideal support environment.**Normally high availability systems might be specified as 99.98%, 99.999% or 99.9996%.*
 
 https://en.wikipedia.org/wiki/Availability
+
+### Backlog Grooming
+
+> Backlog grooming is a regular session where [backlog](https://www.productboard.com/glossary/product-backlog/) items are discussed, reviewed, and prioritized by product managers, product owners, and the rest of the team. The primary goal of backlog grooming is to keep the backlog up-to-date and ensure that backlog items are prepared for upcoming sprints. Additionally, the process helps product managers explain and align the organization behind the strategy that informs the backlog items.
+
+https://www.productboard.com/glossary/backlog-grooming
 
 ### Backend
 
@@ -278,6 +332,12 @@ https://www.amazon.com/Consumption-Economics-New-Rules-Tech/dp/0984213031
 
 https://www.martinfowler.com/articles/continuousIntegration.html
 
+### Continuous Integration (CI) Certification
+
+![](https://martinfowler.com/bliki/images/ci-certification/sketch.png)
+
+https://martinfowler.com/bliki/ContinuousIntegrationCertification.html
+
 ### Cycle Time
 
 > Another relevant metric is cycle time, which is the time a team spends working on an item until it is ready for shipment. In the development world, cycle time is the time from when developers make a commit to the moment it's deployed to production. This key DevOps metric helps project leads and engineering managers better understand what works well in the development pipeline. As a result, they can better align their work with the expectations of stakeholders and customers, ensuring their team's ship faster.
@@ -342,6 +402,12 @@ https://en.wikipedia.org/wiki/DevOps
 
 https://en.wikipedia.org/wiki/Distributed_cache
 
+### Distributed Tracing
+
+> Distributed tracing is a method of observing requests as they propagate through distributed cloud environments. Distributed tracing follows an interaction by tagging it with a unique identifier. This identifier stays with the transaction as it interacts with microservices, containers, and infrastructure. The unique identifier offers real-time visibility into user experience, from the top of the stack to the application layer and the infrastructure beneath.
+
+https://www.dynatrace.com/news/blog/what-is-distributed-tracing/
+
 ### Domain Driven Design
 
 > Domain-driven design (DDD) is a major software design approach,[1] focusing on modeling software to match a domain according to input from that domain's experts.[2]
@@ -363,6 +429,14 @@ https://en.wikipedia.org/wiki/Domain_model
 > In product development, an end user (sometimes end-user)[a] is a person who ultimately uses or is intended to ultimately use a product.[1][2][3] The end user stands in contrast to users who support or maintain the product,[4] such as sysops, system administrators, database administrators,[5] Information technology (IT) experts, software professionals and computer technicians. End users typically do not possess the technical understanding or skill of the product designers,[6] a fact easily overlooked and forgotten by designers: leading to features creating low customer satisfaction.[2] In information technology, end users are not "customers" in the usual sense—they are typically employees of the customer.[7] For example, if a large retail corporation buys a software package for its employees to use, even though the large retail corporation was the "customer" which purchased the software, the end users are the employees of the company, who will use the software at work.
 
 https://en.wikipedia.org/wiki/End_user
+
+### Epic
+
+> An epic is a large body of work that can be broken down into a number of smaller stories, or sometimes called “Issues” in Jira. Epics often encompass multiple teams, on multiple projects, and can even be tracked on multiple boards.
+>
+> Epics are almost always delivered over a set of sprints. As a team learns more about an epic through development and customer feedback, user stories will be added and removed as necessary. That’s the key with agile epics: Scope is flexible, based on customer feedback and team cadence.  
+
+https://www.atlassian.com/agile/project-management/epics
 
 ### Event Aggregator
 
@@ -443,6 +517,21 @@ https://shortcut.com/blog/lead-time-what-is-it-and-why-should-you-care
 
  https://en.wikipedia.org/wiki/JSON
 
+### Key Benefits of Scrum
+
+> The key benefits from using Scrum are:
+>
+> 1. *Quicker release of useable product to users and customers*
+> 2. *Higher quality*
+> 3. *Higher productivity*
+> 4. *Lower costs*
+> 5. *Greater ability to incorporate changes as they occur*
+> 6. *Better employee morale*
+> 7. *Better user satisfactio*
+> 8. *Being able to complete complex projects that previously could not be done*
+
+https://www.agilest.org/scrum/why-does-scrum-work/
+
 ### Microservices
 
 > A microservice architecture – a variant of the service-oriented architecture structural style – is an architectural pattern that arranges an application as a collection of loosely-coupled, fine-grained services, communicating through lightweight protocols. One of its goals is that teams can develop and deploy their services independently of others. This is achieved by the reduction of several dependencies in the code base, allowing for developers to evolve their services with limited restrictions from users, and for additional complexity to be hidden from users.[1] As a consequence, organizations are able to develop software with fast growth and size, as well as use off-the-shelf services more easily. Communication requirements are reduced. These benefits come at a cost to maintaining the decoupling. Interfaces need to be designed carefully and treated as a public API. One technique that is used is having multiple interfaces on the same service, or multiple versions of the same service, so as to not disrupt existing users of the code.
@@ -493,11 +582,33 @@ https://en.wikipedia.org/wiki/NoSQL
 
 https://en.wikipedia.org/wiki/Operating_system
 
+### OWASP Vulnerability
+
+> A vulnerability is a hole or a weakness in the application, which can be a design flaw or an implementation bug, that allows an attacker to cause harm to the stakeholders of an application. Stakeholders include the application owner, application users, and other entities that rely on the application.
+
+https://owasp.org/www-community/vulnerabilities/
+
 ### Partition Tolerance
 
 > The CAP Theorem is based on three trade-offs: consistency, availability, and partition tolerance. Partition tolerance, in this context, means the ability of a data processing system to continue processing data even if a network partition causes communication errors between subsystems.[1]
 
 https://en.wikipedia.org/wiki/Network_partition
+
+### Programming by Remote Control
+
+> As Team Leader, it’s no longer about having the best technical skills yourself, but getting the best out of the team as a whole.  
+>
+> This means allowing people to find their own solutions, work and learn in their own way, and make their own mistakes. This might be one of the most difficult things to learn as a new team lead – allowing people to do things differently to you; maybe even not as good as you can do it, is or at least should be part of your job now.
+>
+> The desire to make the best software and lead a successful project tempts us to control and drive the work: to micro-manage the team. But by making all the decisions, and giving detailed instructions, or ‘programming by remote control’ the Team Leader will become a bottle-neck, slowing the team down, and demotivating people: and the performance of the team will be worse not better.
+>
+> I think that there is a good analogy with sports teams here. The manager of  a great football club isn’t the best footballer. They have a different role. They may hire team members who are much more skilled than they are, and then help them to become even better. Or they may take a young player and coach them in specific skills and later help them to become as good as they can be.They may suggest tactics and the approach to a game, all of this is in service to the team as a whole.
+>
+> The job of a leader is to amplify the effectiveness of the team, not to make all the decisions themselves. 
+>
+> By focusing on the overall goal, and taking a step back, I think that the job of a Team Leader is to allow, and encourage, team members to learn and grow. Your job is to support them, maybe through coaching, but certainly by providing more opportunities, and sometimes guidance, that allows them to develop their skills and be proud of their achievements.
+
+https://www.davefarley.net/?p=366
 
 ### Relational Database Management System (RDBMS)
 
@@ -515,11 +626,29 @@ https://en.wikipedia.org/wiki/Relational_database#RDBMS
 
 https://en.wikipedia.org/wiki/Representational_state_transfer
 
+### Retrospective
+
+> A retrospective is anytime your team reflects on the past to improve the future. Between technical and non-technical teams, you can retro on just about anything! Right now, we're hosting a public retrospective on agile software development. Help define the future of agile by adding some of your ideas to our board. 
+
+https://www.atlassian.com/agile/scrum/retrospectives
+
+### Scrum
+
+Scrum helps people and teams deliver value incrementally in a collaborative way. As an agile framework, Scrum provides just enough structure for people and teams to integrate into how they work, while adding the right practices to optimize for their specific needs
+
+https://www.scrum.org/resources/what-is-scrum
+
 ### Service-oriented architecture (SOA)
 
 >  A service-oriented architecture (SOA) is a style of software design where services are provided to the other components by application components, through a communication protocol over a network. The basic principles of service-oriented architecture are independent of vendors, products and technologies.[1] A service is a discrete unit of functionality that can be accessed remotely and acted upon and updated independently, such as retrieving a credit card statement online. A service has four properties according to one of many definitions of SOA: 1. It logically represents a business activity with a specified outcome. 2. It is self-contained. 3. It is a black box for its consumers. 4. It may consist of other underlying services.
 
 https://en.wikipedia.org/wiki/Service-oriented_architecture
+
+### Sequence Diagram
+
+> A sequence diagram or system sequence diagram shows process interactions arranged in time sequence in the field of software engineering. It depicts the processes involved and the sequence of messages exchanged between the processes needed to carry out the functionality. 
+
+https://en.wikipedia.org/wiki/Sequence_diagram
 
 ### Session
 
@@ -589,6 +718,18 @@ https://en.wikipedia.org/wiki/Software_as_a_service
 
 https://en.wikipedia.org/wiki/Software_development_kit
 
+### SRE
+
+> Site reliability engineering is a set of principles and practices that incorporates aspects of software engineering and applies them to IT infrastructure and operations. The main objectives are to create highly reliable and scalable software systems.
+
+https://en.wikipedia.org/wiki/Site_reliability_engineering
+
+### Standup Meeting
+
+> The daily stand-up is a short, daily meeting to discuss progress and identify blockers. The reason it’s called a “stand-up” is because if attendees participate while standing, the meeting should be kept short.
+
+https://www.atlassian.com/agile/scrum/standups
+
 ###  Static Application Security Testing (SAST)
 
 > Static application security testing (SAST) is used to secure software by reviewing the source code of the software to identify sources of vulnerabilities. Although the process of statically analyzing the source code has existed as long as computers have existed, the technique spread to security in the late 90s and the first public discussion of SQL injection in 1998 when Web applications integrated new technologies like JavaScript and Flash.
@@ -616,6 +757,18 @@ https://en.wikipedia.org/wiki/Static_application_security_testing
 > Software metrics and reverse engineering can be described as forms of static analysis. Deriving software metrics and static analysis are increasingly deployed together, especially in creation of embedded systems, by defining so-called software quality objectives.
 
 https://en.wikipedia.org/wiki/Static_program_analysis
+
+### Story
+
+> A user story is an informal, general explanation of a software feature written from the perspective of the end user. Its purpose is to articulate how a software feature will provide value to the customer.
+>
+> It's tempting to think that user stories are, simply put, software system requirements. But they're not. 
+>
+> A key component of agile software development is putting people first, and a user story puts end users at the center of the conversation. These stories use non-technical language to provide context for the development team and their efforts. After reading a user story, the team knows why they are building, what they're building, and what value it creates. 
+>
+> User stories are one of the core components of an agile program. They help provide a user-focused framework for daily work — which drives collaboration, creativity, and a better product overall.
+
+https://www.atlassian.com/agile/project-management/user-stories
 
 ### Sub-system
 
@@ -650,6 +803,12 @@ https://en.wikipedia.org/wiki/System_administrator
 > A system architecture can consist of system components and the sub-systems developed, that will work together to implement the overall system. There have been efforts to formalize languages to describe system architecture, collectively these are called architecture description languages (ADLs)
 
 https://en.wikipedia.org/wiki/Systems_architecture
+
+### TDD
+
+> Test-driven development is a software development process relying on software requirements being converted to test cases before software is fully developed, and tracking all software development by repeatedly testing the software against all test cases.
+
+https://en.wikipedia.org/wiki/Test-driven_development
 
 ### Terms of Service
 
@@ -733,11 +892,23 @@ https://en.wikipedia.org/wiki/Version_control
 
  https://en.wikipedia.org/wiki/Android_(operating_system)
 
+### AWS
+
+> Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis. Often times, clients will use this in combination with autoscaling.
+
+https://en.wikipedia.org/wiki/Amazon_Web_Services
+
 ### Bluetooth
 
 > Bluetooth is a short-range wireless technology standard that is used for exchanging data between fixed and mobile devices over short distances and building personal area networks (PANs). It employs UHF radio waves in the ISM bands, from 2.402 GHz to 2.48 GHz.[3] It is mainly used as an alternative to wire connections, to exchange files between nearby portable devices and connect cell phones and music players with wireless headphones. In the most widely used mode, transmission power is limited to 2.5 milliwatts, giving it a very short range of up to 10 metres (33 ft).
 
 https://en.wikipedia.org/wiki/Bluetooth
+
+### Checkmarx
+
+> Checkmarx provides static and interactive application security testing (SAST and IAST), Software Composition Analysis (SCA), infrastructure as code security testing (KICS), and application security and training development (Codebashing).
+
+https://en.wikipedia.org/wiki/Checkmarx
 
 ### Chrome
 
@@ -751,6 +922,24 @@ https://en.wikipedia.org/wiki/Bluetooth
 
 https://en.wikipedia.org/wiki/Cascading_Style_Sheets
 
+### Cucumber
+
+> Cucumber testing is a software testing process that deals with an application's behavior. It tests applications as a behavior-driven development (BDD) style. Cucumber tests are written in a simple, natural language that anyone can understand, even people who are not technical experts
+
+https://www.headspin.io/blog/cucumber-testing-a-complete-guide
+
+DbUnit
+
+DbUnit is a JUnit extension (also usable with Ant) targeted at database-driven projects that, among other things, puts your database into a known state between test runs. This is an excellent way to avoid the myriad of problems that can occur when one test case corrupts the database and causes subsequent tests to fail or exacerbate the damage.
+
+DbUnit has the ability to export and import your database data to and from XML datasets. Since version 2.0, DbUnit can also work with very large datasets when used in streaming mode. DbUnit can also help you to verify that your database data match an expected set of values.
+
+https://www.dbunit.org/
+
+DbUnit Maven Plugin: https://www.mojohaus.org/dbunit-maven-plugin/
+
+DbUnit Gradle Plugin: https://github.com/ferigma/dbunit-gradle-plugin
+
 ### Docker
 
 > Docker is a computer program that performs operating-system-level virtualization, also known as "containerization". It was first released in 2013 and is developed by Docker, Inc. Docker is used to run software packages called "containers". Containers are isolated from each other and bundle their own application, tools, libraries and configuration files; they can communicate with each other through well-defined channels. All containers are run by a single operating system kernel and are thus more lightweight than virtual machines. Containers are created from "images" that specify their precise contents. Images are often created by combining and modifying standard images downloaded from public repositories.
@@ -762,6 +951,12 @@ https://en.wikipedia.org/wiki/Docker_(software)
 > Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration.
 
 https://docs.docker.com/compose/overview/
+
+### EC2 (AWS)
+
+> Amazon Elastic Compute Cloud is a part of Amazon.com's cloud-computing platform, Amazon Web Services, that allows users to rent virtual computers on which to run their own computer applications.
+
+https://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud
 
 ### Eclipse
 
@@ -780,6 +975,18 @@ https://en.wikipedia.org/wiki/Elasticsearch
 > Fluentd is a Big Data tool for semi- or un-structured data sets. Like Apache Kafka, it analyzes event logs, application logs, and clickstreams. According to Suonsyrjä and Mikkonen, the "core idea of Fluentd is to be the unifying layer between different types of log inputs and outputs.", Fluentd is available on Linux, Mac OSX, and Windows. 
 
 https://en.wikipedia.org/wiki/Fluentd
+
+### Git Hook
+
+> Like many other Version Control Systems, Git has a way to fire off custom scripts when certain important actions occur. There are two groups of these hooks: client-side and server-side. Client-side hooks are triggered by operations such as committing and merging, while server-side hooks run on network operations such as receiving pushed commits. You can use these hooks for all sorts of reasons.
+
+https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
+
+### Github
+
+> GitHub, Inc. is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project. 
+
+http://github.com/
 
 ### Google Chat
 
@@ -805,6 +1012,18 @@ https://en.wikipedia.org/wiki/Gradle
 
 https://en.wikipedia.org/wiki/Apache_Groovy
 
+### H2
+
+> H2 is a relational database management system written in Java. It can be embedded in Java applications or run in client-server mode.
+
+https://en.wikipedia.org/wiki/H2_(DBMS)
+
+Helm
+
+What is Helm? Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application. Charts are easy to create, version, share, and publish — so start using Helm and stop the copy-and-paste.
+
+https://helm.sh
+
 ### HTML5
 
 > HTML 5 (formerly spelled HTML5[a]) is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current major version of the HTML standard, and subsumes XHTML. It currently exists in two standardized forms: HTML 5.2 Recommendation by the World Wide Web Consortium (W3C, a broad coalition of organizations), intended primarily for Web content developers; and HTML Living Standard by WHATWG (a small consortium of four browser vendors), intended primarily for browser developers, though it also exists in an abridged Web developer version. There are minor conflicts between the two groups' specifications.
@@ -829,6 +1048,56 @@ https://en.wikipedia.org/wiki/Java_(software_platform)
 
 https://en.wikipedia.org/wiki/JavaScript
 
+### JCasc
+
+> Setting up Jenkins is a complex process, as both Jenkins and its plugins require some tuning and configuration, with dozens of parameters to set within the web UI manage section.
+>
+> Jenkins Configuration as Code provides the ability to define this whole configuration as a simple, human-friendly, plain text yaml syntax. Without any manual steps, this configuration can be validated and applied to a Jenkins controller in a fully reproducible way. With JCasC, setting up a new Jenkins controller will become a no-brainer event.
+
+https://www.jenkins.io/projects/jcasc/
+
+### Jenkins
+
+> Jenkins is an open source automation server. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery. It is a server-based system that runs in servlet containers such as Apache Tomcat
+
+https://en.wikipedia.org/wiki/Jenkins_(software)
+
+### Jenkins-Jira Integration
+
+> This integration provides a free, easy, secure, and reliable way to connect your Jenkins server, running behind the firewall, with either Jira Software Cloud or Jira Service Management Cloud.
+>
+> This gives your team more visibility and context on every issue in Jira, showing the latest build status or if your work has been successfully deployed to an environment.
+
+https://support.atlassian.com/jira-cloud-administration/docs/integrate-jenkins-with-jira/
+
+### Jenkins Operations Center
+
+> As development teams add more instances of Jenkins, the popular open source continuous integration (CI) tool, they face challenges managing the siloed Jenkins configurations that proliferate. With Jenkins Operations Center by CloudBees, IT operations and development teams can now centrally manage all Jenkins resources, allowing them to reduce additional hardware purchases and assert more control over the development environment.
+
+https://www.cloudbees.com/newsroom/jenkins-operations-center-cloudbees-manages-jenkins-sprawl-across-enterprise
+
+### Jenkins Shared Pipeline Library
+
+> A Shared Library is defined with a name, a source code retrieval method such as by SCM, and optionally a default version. The name should be a short identifier as it will be used in scripts.
+>
+> The version could be anything understood by that SCM; for example, branches, tags, and commit hashes all work for Git. You may also declare whether scripts need to explicitly request that library (detailed below), or if it is present by default. Furthermore, if you specify a version in Jenkins configuration, you can block scripts from selecting a different version.
+>
+> The best way to specify the SCM is using an SCM plugin which has been specifically updated to support a new API for checking out an arbitrary named version (Modern SCM option). As of this writing, the latest versions of the Git and Subversion plugins support this mode; others should follow.
+
+https://www.jenkins.io/doc/book/pipeline/shared-libraries/
+
+### Jira
+
+> Jira is a proprietary issue tracking product developed by Atlassian that allows bug tracking and agile project management
+
+https://en.wikipedia.org/wiki/Jira_(software)
+
+### JUnit
+
+> JUnit is a unit testing framework for the Java programming language. JUnit has been important in the development of test-driven development, and is one of a family of unit testing frameworks which is collectively known as xUnit that originated with SUnit. JUnit is linked as a JAR at compile-time
+
+https://g.co/kgs/XTcMoh
+
 ### Kafka
 
 > Apache Kafka is an open-source stream-processing software platform developed by the Apache Software Foundation, written in Scala and Java. The project aims to provide a unified, highthroughput, low-latency platform for handling real-time data feeds. Its storage layer is essentially a "massively scalable pub/sub message queue designed as a distributed transaction log," making it highly valuable for enterprise infrastructures to process streaming data. Additionally, Kafka connects to external systems (for data import/export) via Kafka Connect and provides Kafka Streams, a Java stream processing library.
@@ -841,6 +1110,12 @@ https://en.wikipedia.org/wiki/Apache_Kafka
 
 https://en.wikipedia.org/wiki/Kibana
 
+### liquibase
+
+> Liquibase is an open-source database-independent library for tracking, managing and applying database schema changes. It was started in 2006 to allow easier tracking of database changes, especially in an agile software development environment
+
+https://en.wikipedia.org/wiki/Liquibase
+
 ### Mac OS
 
 > The family of Mac operating systems developed by Apple Inc. includes the graphical user interface-based operating systems it has designed for use with its Mac series of personal computers since 1984, as well as the related system software it once created for compatible third-party systems.
@@ -851,11 +1126,31 @@ https://en.wikipedia.org/wiki/Kibana
 
 https://en.wikipedia.org/wiki/Mac_operating_systems
 
+### Maven
+
+> Maven is a build automation tool used primarily for Java projects. Maven can also be used to build and manage projects written in C#, Ruby, Scala, and other languages. The Maven project is hosted by the Apache Software Foundation, where it was formerly part of the Jakarta Project.
+
+https://en.wikipedia.org/wiki/Apache_Maven
+
 ### Microsoft Teams
 
 > Microsoft Teams is a proprietary business communication platform developed by Microsoft, as part of the Microsoft 365 family of products. Teams primarily competes with the similar service Slack, offering workspace chat and videoconferencing, file storage, and application integration.[7] Teams is replacing other Microsoft-operated business messaging and collaboration platforms, including Skype for Business and Microsoft Classroom. Throughout the COVID-19 pandemic, Teams, and other software such as Zoom and Google Meet, gained much interest as many meetings moved to a virtual environment.[8] As of 2022, it has about 270 million monthly users.[9]
 
 https://en.wikipedia.org/wiki/Microsoft_Teams
+
+### Micrometer Prometheus Registry
+
+> Spring Boot uses Micrometer, an application metrics facade to integrate actuator metrics with external monitoring systems.
+>
+> It supports several monitoring systems like Netflix Atlas, AWS Cloudwatch, Datadog, InfluxData, SignalFx, Graphite, Wavefront, Prometheus etc.
+>
+> To integrate actuator with Prometheus, you need to add the micrometer-registry-prometheus dependency -
+>
+> Once you add the above dependency, Spring Boot will automatically configure a PrometheusMeterRegistry and a CollectorRegistry to collect and export metrics data in a format that can be scraped by a Prometheus server.
+>
+> All the application metrics data are made available at an actuator endpoint called /prometheus. The Prometheus server can scrape this endpoint to get metrics data periodically.
+
+https://www.callicoder.com/spring-boot-actuator-metrics-monitoring-dashboard-prometheus-grafana/
 
 ### New Relic
 
@@ -869,11 +1164,40 @@ https://www.ibm.com/garage/method/practices/manage/tool_new_relic/
 
 https://en.wikipedia.org/wiki/Nginx
 
+### OpenShift
+
+> OpenShift is a family of containerization software products developed by Red Hat. Its flagship product is the OpenShift Container Platform — a hybrid cloud platform as a service built around Linux containers orchestrated and managed by Kubernetes on a foundation of Red Hat Enterprise Linux
+
+https://en.wikipedia.org/wiki/OpenShift
+
+### OWASP Dependency-Check
+
+Dependency-Check is a Software Composition Analysis (SCA) tool that attempts to detect publicly disclosed vulnerabilities contained within a project’s dependencies. It does this by determining if there is a Common Platform Enumeration (CPE) identifier for a given dependency. If found, it will generate a report linking to the associated CVE entries.
+
+https://owasp.org/www-project-dependency-check/
+
+### Postgres
+
+> PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance. It was originally named POSTGRES, referring to its origins as a successor to the Ingres database developed at the University of California, Berkeley
+
+https://en.wikipedia.org/wiki/PostgreSQL
+
+### PMD
+
+PMD is an open source static source code analyzer that reports on issues found within application code. PMD includes built-in rule sets and supports the ability to write custom rules. PMD does not report compilation errors, as it only can process well-formed source file
+https://en.wikipedia.org/wiki/PMD_(software)
+
 ### Prometheus
 
 > Prometheus is an open-source systems monitoring and alerting toolkit originally built at SoundCloud. Since its inception in 2012, many companies and organizations have adopted Prometheus, and the project has a very active developer and user community. It is now a standalone open source project and maintained independently of any company. To emphasize this, and to clarify the project's governance structure, Prometheus joined the Cloud Native Computing Foundation in 2016 as the second hosted project, after Kubernetes.
 
 https://prometheus.io/docs/introduction/overview/
+
+### Pre-Commit Hook (Git)
+
+> The pre-commit hook is run first, before you even type in a commit message. It’s used to inspect the snapshot that’s about to be committed, to see if you’ve forgotten something, to make sure tests run, or to examine whatever you need to inspect in the code.
+
+https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
 
 ### PromQL
 
@@ -893,6 +1217,12 @@ https://timber.io/blog/promql-for-humans/
 
 https://en.wikipedia.org/wiki/Slack_(software)
 
+### SonarQube
+
+> SonarQube is an open-source platform developed by SonarSource for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs and code smells on 29 programming languages
+
+https://en.wikipedia.org/wiki/SonarQube
+
 ### Spring
 
 > The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE (Enterprise Edition) platform. Although the framework does not impose any specific programming model, it has become popular in the Java community as an addition to, or even replacement for the Enterprise JavaBeans (EJB) model. The Spring Framework is open source.
@@ -904,6 +1234,27 @@ https://en.wikipedia.org/wiki/Spring_Framework
 > Spring Boot is designed to get you up and running as quickly as possible, with minimal upfront configuration of Spring. Spring Boot takes an opinionated view of building production ready applications.
 
 https://spring.io/
+
+### Spring Boot Actuator
+
+> In essence, Actuator brings production-ready features to our application.
+>
+> Monitoring our app, gathering metrics, understanding traffic, or the state of our database become trivial with this dependency.
+>
+> The main benefit of this library is that we can get production-grade tools without having to actually implement these features ourselves.
+>
+> Actuator is mainly used to expose operational information about the running application — health, metrics, info, dump, env, etc. It uses HTTP endpoints or JMX beans to enable us to interact with it.
+>
+> Once this dependency is on the classpath, several endpoints are available for us out of the box. As with most Spring modules, we can easily configure or extend it in many ways.
+>
+> https://www.baeldung.com/spring-boot-actuators
+
+### Veracode
+
+> Veracode is an application security company based in Burlington, Massachusetts. Founded in 2006, it provides SaaS application security that integrates application analysis into development pipelines.
+>
+
+https://en.wikipedia.org/wiki/Veracode
 
 ### Visual Studio Code
 
@@ -921,6 +1272,22 @@ https://en.wikipedia.org/wiki/Visual_Studio_Code
 > As of September 2022, the most recent version of Windows is Windows 11 for consumer PCs and tablets, Windows 11 Enterprise for corporations, and Windows Server 2022 for servers.
 
 https://en.wikipedia.org/wiki/Microsoft_Windows
+
+### WireMock
+
+> WireMock is a library for stubbing and mocking web services. It constructs an HTTP server that we can connect to as we would to an actual web service. When a WireMock server is in action, we can set up expectations, call the service and then verify its behaviors.
+
+https://www.baeldung.com/introduction-to-wiremock
+
+Using WireMock with Docker Compose: https://dev.to/rogervinas/testing-with-wiremock-docker-2gh9
+
+### Zipkin
+
+> Zipkin is a distributed tracing system. It helps gather timing data needed to troubleshoot latency problems in service architectures. Features include both the collection and lookup of this data.
+>
+> If you have a trace ID in a log file, you can jump directly to it. Otherwise, you can query based on attributes such as service, operation name, tags and duration. Some interesting data will be summarized for you, such as the percentage of time spent in a service, and whether or not operations failed.
+
+https://zipkin.io/
 
 ### ZooKeeper
 
