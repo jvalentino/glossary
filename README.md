@@ -260,6 +260,12 @@ https://en.wikipedia.org/wiki/CAP_theorem
 
 https://www.crowdstrike.com/cybersecurity-101/observability/centralized-logging/
 
+### Change Failure Rate (CFR)
+
+> The share of incidents, rollbacks, and failures out of all deployments
+
+https://www.swarmia.com/blog/dora-metrics
+
 ### Cloud Computing
 
 > Cloud computing[1] is the on-demand availability of computer system resources, especially data storage (cloud storage) and computing power, without direct active management by the user.[2] Large clouds often have functions distributed over multiple locations, each of which is a data center. Cloud computing relies on sharing of resources to achieve coherence and typically uses a "pay as you go" model, which can help in reducing capital expenses but may also lead to unexpected operating expenses for users.[3]
@@ -370,6 +376,22 @@ https://techterms.com/definition/data
 
 https://en.wikipedia.org/wiki/Data_fusion
 
+### Defect
+
+> Anything about a Product that is seen as ‘wrong’ by a Stakeholder; defects usually result in a new Item being added to the Backlog;
+>
+> A bug, failure, flaw or error in an application or program that results in unexpected, incorrect or unintended ways.
+>
+> Examples
+>
+> A second major pattern of failure is a team not seeing any impediments, yet they have many open defects that are not quickly repaired.
+>
+> Performance testing (this may need to be done in a test lab the Team doesn’t control) to find defects and holes to be plugged.
+>
+> Using the extreme programming technique of 'pair programming', the rate of defects is lower. Thus, it can be hypothesized that pair programming is an effective technique to reduce new defects when either new code or existing code is worked on.
+
+https://scrumdictionary.com/term/defect/
+
 ### Deployment Frequency
 
 > In a nutshell, Deployment frequency measures how often code is deployed to production. This metric is correlated with both the speed and the quality of your engineering team.
@@ -464,6 +486,12 @@ A concept in AP systems of CAP Theorem, refers to that the state will not be ins
 >
 
 https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing
+
+### Feature
+
+> A feature is a service or function of the product that delivers business value and fulfils the customer’s need. Each feature is broken down into several user stories, as it is usually too big to be worked on directly. 
+
+https://www.knowledgehut.com/blog/agile/features-in-agile-methodology
 
 ### Gherkin
 
@@ -857,6 +885,14 @@ https://smartbear.com/learn/automated-testing/what-is-unit-testing/
 A use case is a list of actions or event steps typically defining the interactions between a role (known in the Unified Modeling Language (UML) as an actor) and a system to achieve a goal. The actor can be a human or other external system. In systems engineering, use cases are used at a higher level than within software engineering, often representing missions or stakeholder goals. The detailed requirements may then be captured in the Systems Modeling Language (SysML) or as contractual statements.
 
 https://en.wikipedia.org/wiki/Use_case
+
+### Velocity
+
+> At the end of each iteration, the team adds up effort estimates associated with user stories that were completed during that iteration. This total is called velocity.
+>
+> Knowing velocity, the team can compute (or revise) an estimate of how long the project will take to complete, based on the estimates associated with remaining user stories and assuming that velocity over the remaining iterations will remain approximately the same. This is generally an accurate prediction, even though rarely a precise one.
+
+https://www.agilealliance.org/glossary/velocity
 
 ### User Experience (UX)
 
