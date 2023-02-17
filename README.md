@@ -1148,11 +1148,23 @@ https://www.cloudbees.com/newsroom/jenkins-operations-center-cloudbees-manages-j
 
 https://www.jenkins.io/doc/book/pipeline/shared-libraries/
 
+### JSP
+
+> Jakarta Server Pages is a collection of technologies that helps software developers create dynamically generated web pages based on HTML, XML, SOAP, or other document types. Released in 1999 by Sun Microsystems, JSP is similar to PHP and ASP, but uses the Java programming language. 
+
+https://en.wikipedia.org/wiki/Jakarta_Server_Pages
+
 ### Jira
 
 > Jira is a proprietary issue tracking product developed by Atlassian that allows bug tracking and agile project management
 
 https://en.wikipedia.org/wiki/Jira_(software)
+
+### JPA
+
+> Jakarta Persistence (JPA; formerly Java Persistence API) is a Jakarta EE application programming interface specification that describes the management of relational data in enterprise Java applications.
+
+https://en.wikipedia.org/wiki/Jakarta_Persistence
 
 ### JUnit
 
@@ -1285,6 +1297,12 @@ https://en.wikipedia.org/wiki/Slack_(software)
 
 https://en.wikipedia.org/wiki/SonarQube
 
+### Spock
+
+> Spock is a Java testing framework capable of handling the full life cycle of a computer program. It was initially created in 2008 by Peter Niederwieser, a software engineer with GradleWare. A second Spock committer is Luke Daley who is also the creator of the popular Geb functional testing framework.
+
+https://en.wikipedia.org/wiki/Spock_(testing_framework)
+
 ### Spring
 
 > The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE (Enterprise Edition) platform. Although the framework does not impose any specific programming model, it has become popular in the Java community as an addition to, or even replacement for the Enterprise JavaBeans (EJB) model. The Spring Framework is open source.
@@ -1310,6 +1328,26 @@ https://spring.io/
 > Once this dependency is on the classpath, several endpoints are available for us out of the box. As with most Spring modules, we can easily configure or extend it in many ways.
 >
 > https://www.baeldung.com/spring-boot-actuators
+
+### Spring Boot Test
+
+> Spring Boot provides a number of utilities and annotations to help when testing your application. Test support is provided by two modules: spring-boot-test contains core items, and spring-boot-test-autoconfigure supports auto-configuration for tests.
+>
+> Most developers use the spring-boot-starter-test “Starter”, which imports both Spring Boot test modules as well as JUnit, AssertJ, Hamcrest, and a number of other useful libraries.
+
+https://docs.spring.io/spring-boot/docs/2.0.4.RELEASE/reference/html/boot-features-testing.html
+
+### Spring MVC
+
+> Spring MVC is a Java framework that is used to develop web applications. It is built on a Model-View-Controller (MVC) pattern and possesses all the basic features of a spring framework, such as Dependency Injection, Inversion of Control. The architectural design of a Spring MVC can be used to develop flexible web applications. It basically separates the different aspects of the application, like input logic, UI logic, and business logic. 
+
+https://www.upgrad.com/blog/spring-mvc-flow-diagram
+
+### Tomcat (Apache)
+
+> Apache Tomcat is a free and open-source implementation of the Jakarta Servlet, Jakarta Expression Language, and WebSocket technologies. It provides a "pure Java" HTTP web server environment in which Java code can also run. Thus it is a Java web application server, although not a full JEE application server
+
+https://en.wikipedia.org/wiki/Apache_Tomcat
 
 ### Veracode
 
