@@ -19,6 +19,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [Big Data](#big-data)
     + [CAP Theorem](#cap-theorem)
     + [Centralized Logging](#centralized-logging)
+    + [Change Failure Rate (CFR)](#change-failure-rate-cfr)
     + [Cloud Computing](#cloud-computing)
     + [Cloud Native](#cloud-native)
     + [Code Formatting](#code-formatting)
@@ -31,9 +32,11 @@ When writing documentation involving software, I seem to always find myself addi
     + [Continuous Integration (CI)](#continuous-integration-ci)
     + [Continuous Integration (CI) Certification](#continuous-integration-ci-certification)
     + [Cycle Time](#cycle-time)
+    + [DAO Design Pattern](#dao-design-pattern)
     + [Database](#database)
     + [Data](#data)
     + [Data Fusion](#data-fusion)
+    + [Defect](#defect)
     + [Deployment Frequency](#deployment-frequency)
     + [Desktop Computer](#desktop-computer)
     + [DevOps](#devops)
@@ -48,6 +51,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [Event-driven Architecture](#event-driven-architecture)
     + [Eventual Consistency](#eventual-consistency)
     + [Fallacies of Distributed Computing](#fallacies-of-distributed-computing)
+    + [Feature](#feature)
     + [Gherkin](#gherkin)
     + [Graphical User Interface (GUI)](#graphical-user-interface-gui)
     + [High Availability (HA)](#high-availability-ha)
@@ -60,6 +64,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [Microservices](#microservices)
     + [Monitoring and Alerting](#monitoring-and-alerting)
     + [MTTR](#mttr)
+    + [MVC Design Pattern](#mvc-design-pattern)
     + [Non-functional requirement](#non-functional-requirement)
     + [NoSQL Database](#nosql-database)
     + [One-to-many (data model)](#one-to-many-data-model)
@@ -99,6 +104,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [UI Testing](#ui-testing)
     + [Unit Testing](#unit-testing)
     + [Use Case](#use-case)
+    + [Velocity](#velocity)
     + [User Experience (UX)](#user-experience-ux)
     + [Version Control](#version-control)
 - [Technologies](#technologies)
@@ -350,6 +356,14 @@ https://martinfowler.com/bliki/ContinuousIntegrationCertification.html
 
 https://www.atlassian.com/devops/frameworks/devops-metrics
 
+### DAO Design Pattern
+
+> The Data Access Object (DAO) pattern is a structural pattern that allows us to isolate the application/business layer from the persistence layer (usually a relational database but could be any other persistence mechanism) using an abstract API.
+>
+> The API hides from the application all the complexity of performing CRUD operations in the underlying storage mechanism. This permits both layers to evolve separately without knowing anything about each other.
+
+https://www.baeldung.com/java-dao-pattern
+
 ### Database
 
 > In computing, a database is an organized collection of data stored and accessed electronically. Small databases can be stored on a file system, while large databases are hosted on computer clusters or cloud storage. The design of databases spans formal techniques and practical considerations, including data modeling, efficient data representation and storage, query languages, security and privacy of sensitive data, and distributed computing issues, including supporting concurrent access and fault tolerance.
@@ -577,6 +591,18 @@ https://www.oreilly.com/library/view/effective-monitoring-and/9781449333515/ch01
 > MTTR (mean time to recovery or mean time to restore) is the average time it takes to recover from a product or system failure. This includes the full time of the outage—from the time the system or product fails to the time that it becomes fully operational again. It's a key DevOps metric that can be used to measure the stability of a DevOps team, as noted by DevOps Research and Assessment (DORA).
 
 https://www.atlassian.com/incident-management/kpis/common-metrics
+
+### MVC Design Pattern
+
+> The Model View Controller (MVC) design pattern specifies that an application consist of a data model, presentation information, and control information. The pattern requires that each of these be separated into different objects.
+>
+> MVC is more of an architectural pattern, but not for complete application. MVC mostly relates to the UI / interaction layer of an application. You’re still going to need business logic layer, maybe some service layer and data access layer.
+>
+> - The **Model** contains only the pure application data, it contains no logic describing how to present the data to a user.
+> - The **View** presents the model’s data to the user. The view knows how to access the model’s data, but it does not know what this data means or what the user can do to manipulate it.
+> - The **Controller** exists between the view and the model. It listens to events triggered by the view (or another external source) and executes the appropriate reaction to these events. In most cases, the reaction is to call a method on the model. Since the view and the model are connected through a notification mechanism, the result of this action is then automatically reflected in the view.
+
+https://www.geeksforgeeks.org/mvc-design-pattern/
 
 ### Non-functional requirement
 
