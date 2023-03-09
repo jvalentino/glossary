@@ -65,6 +65,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [Monitoring and Alerting](#monitoring-and-alerting)
     + [MTTR](#mttr)
     + [MVC Design Pattern](#mvc-design-pattern)
+    + [Network function virtualization (NFV)](#network-function-virtualization-nfv)
     + [Non-functional requirement](#non-functional-requirement)
     + [NoSQL Database](#nosql-database)
     + [One-to-many (data model)](#one-to-many-data-model)
@@ -87,6 +88,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [SMS](#sms)
     + [Software](#software)
     + [Software as a Service (SaaS)](#software-as-a-service-saas)
+    + [Software Defined Networking (SDN)](#software-defined-networking-sdn)
     + [Software Development Kit (SDK)](#software-development-kit-sdk)
     + [SRE](#sre)
     + [Standup Meeting](#standup-meeting)
@@ -139,7 +141,9 @@ When writing documentation involving software, I seem to always find myself addi
     + [Jenkins-Jira Integration](#jenkins-jira-integration)
     + [Jenkins Operations Center](#jenkins-operations-center)
     + [Jenkins Shared Pipeline Library](#jenkins-shared-pipeline-library)
+    + [JSP](#jsp)
     + [Jira](#jira)
+    + [JPA](#jpa)
     + [JUnit](#junit)
     + [Kafka](#kafka)
     + [Kibana](#kibana)
@@ -153,6 +157,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [OpenShift](#openshift)
     + [OWASP Dependency-Check](#owasp-dependency-check)
     + [Postgres](#postgres)
+    + [pgpool](#pgpool)
     + [PMD](#pmd)
     + [Prometheus](#prometheus)
     + [Pre-Commit Hook (Git)](#pre-commit-hook-git)
@@ -160,9 +165,13 @@ When writing documentation involving software, I seem to always find myself addi
     + [Redis](#redis)
     + [Slack](#slack)
     + [SonarQube](#sonarqube)
+    + [Spock](#spock)
     + [Spring](#spring)
     + [Spring Boot](#spring-boot)
     + [Spring Boot Actuator](#spring-boot-actuator)
+    + [Spring Boot Test](#spring-boot-test)
+    + [Spring MVC](#spring-mvc)
+    + [Tomcat (Apache)](#tomcat-apache)
     + [Veracode](#veracode)
     + [Visual Studio Code](#visual-studio-code)
     + [Windows OS](#windows-os)
@@ -604,6 +613,18 @@ https://www.atlassian.com/incident-management/kpis/common-metrics
 
 https://www.geeksforgeeks.org/mvc-design-pattern/
 
+### Network function virtualization (NFV)
+
+> **Network functions virtualization** (NFV)[[1\]](https://en.wikipedia.org/wiki/Network_function_virtualization#cite_note-1) is a [network architecture](https://en.wikipedia.org/wiki/Network_architecture) concept that leverages the IT [virtualization](https://en.wikipedia.org/wiki/Virtualization) technologies to virtualize entire classes of [network node](https://en.wikipedia.org/wiki/Network_node) functions into building blocks that may connect, or chain together, to create and deliver communication services.
+>
+> NFV relies upon traditional server-[virtualization](https://en.wikipedia.org/wiki/Virtualization) techniques such as those used in enterprise IT. A virtualized network function, or VNF, is implemented within one or more [virtual machines](https://en.wikipedia.org/wiki/Virtual_machines) or [containers](https://en.wikipedia.org/wiki/OS-level_virtualization) running different software and processes, on top of commercial off the shelf (COTS) high-volume servers, switches and storage devices, or even [cloud computing](https://en.wikipedia.org/wiki/Cloud_computing) infrastructure, instead of having custom hardware appliances for each network function thereby avoiding vendor lock-in.
+>
+> For example, a virtual [session border controller](https://en.wikipedia.org/wiki/Session_border_controller) could be deployed to protect a network without the typical cost and complexity of obtaining and installing physical network protection units. Other examples of NFV include virtualized [load balancers](https://en.wikipedia.org/wiki/Network_Load_Balancing), [firewalls](https://en.wikipedia.org/wiki/Firewall_(computing)), [intrusion detection devices](https://en.wikipedia.org/wiki/Intrusion_detection_system) and [WAN accelerators](https://en.wikipedia.org/wiki/WAN_optimization) to name a few.[[2\]](https://en.wikipedia.org/wiki/Network_function_virtualization#cite_note-2)
+>
+> The decoupling of the network function software from the customized hardware platform realizes a flexible network architecture that enables agile network management, fast new service roll outs with significant reduction in CAPEX and OPEX.
+
+https://en.wikipedia.org/wiki/Network_function_virtualization
+
 ### Non-functional requirement
 
 > In systems engineering and requirements engineering, a non-functional requirement (NFR) is a requirement that specifies criteria that can be used to judge the operation of a system, rather than specific behaviours. They are contrasted with functional requirements that define specific behavior or functions. The plan for implementing functional requirements is detailed in the system design. The plan for implementing non-functional requirements is detailed in the system architecture, because they are usually architecturally significant requirements.[1]
@@ -763,6 +784,14 @@ https://en.wikipedia.org/wiki/Software
 > SaaS is considered to be part of cloud computing, along with infrastructure as a service (IaaS),[5] platform as a service (PaaS), desktop as a service (DaaS), managed software as a service (MSaaS), mobile backend as a service (MBaaS), data center as a service (DCaaS), integration platform as a service (iPaaS), and information technology management as a service (ITMaaS).[6]
 
 https://en.wikipedia.org/wiki/Software_as_a_service
+
+### Software Defined Networking (SDN)
+
+> **Software-defined networking** (**SDN**) technology is an approach to [network management](https://en.wikipedia.org/wiki/Network_management) that enables dynamic, programmatically efficient network configuration in order to improve network performance and monitoring, making it more like [cloud computing](https://en.wikipedia.org/wiki/Cloud_computing) than traditional network management.[[1\]](https://en.wikipedia.org/wiki/Software-defined_networking#cite_note-ReferenceA-1) SDN is meant to address the static architecture of traditional networks. SDN attempts to centralize network intelligence in one network component by disassociating the forwarding process of [network packets](https://en.wikipedia.org/wiki/Network_packet) ([data plane](https://en.wikipedia.org/wiki/Data_plane)) from the routing process ([control plane](https://en.wikipedia.org/wiki/Control_plane)).[[2\]](https://en.wikipedia.org/wiki/Software-defined_networking#cite_note-2) The [control plane](https://en.wikipedia.org/wiki/Control_plane) consists of one or more controllers, which are considered the brain of the SDN network where the whole intelligence is incorporated. However, centralization has its own drawbacks when it comes to security,[[1\]](https://en.wikipedia.org/wiki/Software-defined_networking#cite_note-ReferenceA-1) scalability and elasticity[[1\]](https://en.wikipedia.org/wiki/Software-defined_networking#cite_note-ReferenceA-1) and this is the main issue of SDN.[[3\]](https://en.wikipedia.org/wiki/Software-defined_networking#cite_note-3)
+>
+> SDN was commonly associated with the [OpenFlow](https://en.wikipedia.org/wiki/OpenFlow) protocol (for remote communication with network plane elements for the purpose of determining the path of [network packets](https://en.wikipedia.org/wiki/Network_packet) across [network switches](https://en.wikipedia.org/wiki/Network_switch)) since the latter's emergence in 2011. However, since 2012, proprietary systems also used the term.[[4\]](https://en.wikipedia.org/wiki/Software-defined_networking#cite_note-TechTarget:_SDN_is_not_OpenFlow-4)[[5\]](https://en.wikipedia.org/wiki/Software-defined_networking#cite_note-TechTarget:_OpenFlow_not_the_only_show_in_town-5) These include [Cisco Systems](https://en.wikipedia.org/wiki/Cisco_Systems)' Open Network Environment and [Nicira](https://en.wikipedia.org/wiki/Nicira)'s [network virtualization platform](https://en.wikipedia.org/wiki/Network_virtualization_platform).
+
+- https://en.wikipedia.org/wiki/Software-defined_networking
 
 ### Software Development Kit (SDK)
 
@@ -1255,6 +1284,19 @@ https://owasp.org/www-project-dependency-check/
 > PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance. It was originally named POSTGRES, referring to its origins as a successor to the Ingres database developed at the University of California, Berkeley
 
 https://en.wikipedia.org/wiki/PostgreSQL
+
+### pgpool
+
+> Pgpool-II is a middleware that works between PostgreSQL servers and a PostgreSQL database client. It is distributed under a license similar to BSD and MIT. It provides the following features.
+>
+> - Connection Pooling - Pgpool-II saves connections to the PostgreSQL servers, and reuse them whenever a new connection with the same properties (i.e. username, database, protocol version) comes in. It reduces connection overhead, and improves system's overall throughput.
+> - Replication - Pgpool-II can manage multiple PostgreSQL servers. Using the replication function enables creating a realtime backup on 2 or more physical disks, so that the service can continue without stopping servers in case of a disk failure.
+> - Load Balancing - If a database is replicated, executing a SELECT query on any server will return the same result. Pgpool-II takes an advantage of the replication feature to reduce the load on each PostgreSQL server by distributing SELECT queries among multiple servers, improving system's overall throughput. At best, performance improves proportionally to the number of PostgreSQL servers. Load balance works best in a situation where there are a lot of users executing many queries at the same time.
+> - Limiting Exceeding Connections - There is a limit on the maximum number of concurrent connections with PostgreSQL, and connections are rejected after this many connections. Setting the maximum number of connections, however, increases resource consumption and affect system performance. pgpool-II also has a limit on the maximum number of connections, but extra connections will be queued instead of returning an error immediately.
+> - Watchdog - Watchdog can coordinate multiple Pgpool-II, create a robust cluster system and avoid the single point of failure or split brain. Watchdog can perform lifecheck against other pgpool-II nodes, to detect a fault of Pgpoll-II. If active Pgpool-II goes down, standby Pgpool-II can be promoted to active, and take over Virtual IP.
+> - In Memory Query Cache - In memory query cache allows to save a pair of SELECT statement and its result. If an identical SELECTs comes in, Pgpool-II returns the value from cache. Since no SQL parsing nor access to PostgreSQL are involved, using in memory cache is extremely fast. On the other hand, it might be slower than the normal path in some cases, because it adds some overhead of storing cache data.
+
+https://pgpool.net/mediawiki/index.php/Main_Page
 
 ### PMD
 
