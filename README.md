@@ -27,6 +27,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [Command Query Response Segregation (CQRS)](#command-query-response-segregation-cqrs)
     + [Computer Hardware](#computer-hardware)
     + [Computer Vision](#computer-vision)
+    + [Configuration as Code](#configuration-as-code)
     + [Consumer-Driven Contracts](#consumer-driven-contracts)
     + [Consumption Economics](#consumption-economics)
     + [Continuous Delivery (CD)](#continuous-delivery-cd)
@@ -70,6 +71,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [Non-functional requirement](#non-functional-requirement)
     + [NoSQL Database](#nosql-database)
     + [One-to-many (data model)](#one-to-many-data-model)
+    + [OpenAPI](#openapi)
     + [Operating System](#operating-system)
     + [OWASP Vulnerability](#owasp-vulnerability)
     + [Partition Tolerance](#partition-tolerance)
@@ -348,6 +350,14 @@ https://en.wikipedia.org/wiki/Computer_hardware
 > Computer vision tasks include methods for acquiring, processing, analyzing and understanding digital images, and extraction of high-dimensional data from the real world in order to produce numerical or symbolic information, e.g. in the forms of decisions Understanding in this context means the transformation of visual images (the input of the retina) into descriptions of the world that make sense to thought processes and can elicit appropriate action. This image understanding can be seen as the disentangling of symbolic information from image data using models constructed with the aid of geometry, physics, statistics, and learning theory.
 
 https://en.wikipedia.org/wiki/Computer_vision
+
+### Configuration as Code
+
+> Configuration as code (CAC) is managing configuration resources in your source repository. You treat your application config resources as versioned artifacts. By managing your application environment in tandem with your application code, you gain the same benefits you get with your code.
+>
+> CaC is a set of processes and practices that will save you time, increase your flexibility, and improve your system uptime. In this post, I'll explore what you need to know about configuration as code. If you’re planning to put CAC in place, it will help you make informed decisions. If you're not, my goal is to convince you to use it.
+
+https://www.cloudbees.com/blog/configuration-as-code-everything-need-know
 
 ### Consumer-Driven Contracts
 
@@ -664,6 +674,12 @@ https://en.wikipedia.org/wiki/NoSQL
 > In systems analysis, a one-to-many relationship is a type of cardinality that refers to the relationship between two entities (see also entity–relationship model) A and B in which an element of A may be linked to many elements of B, but a member of B is linked to only one element of A. For instance, think of A as books, and B as pages. A book can have many pages, but a page can only be in one book.
 
 `https://en.wikipedia.org/wiki/One-to-many_(data_model)`
+
+### OpenAPI
+
+> The OpenAPI Specification, previously known as the Swagger Specification, is a specification for a machine-readable interface definition language for describing, producing, consuming and visualizing web services.
+
+https://en.wikipedia.org/wiki/OpenAPI_Specification
 
 ### Operating System
 
