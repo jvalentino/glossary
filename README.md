@@ -113,10 +113,14 @@ When writing documentation involving software, I seem to always find myself addi
     + [Alertmanager](#alertmanager)
     + [Apache (PHP enabled)](#apache-php-enabled)
     + [Android OS](#android-os)
+    + [API Gateway (AWS)](#api-gateway-aws)
     + [AWS](#aws)
+    + [AWS CLI](#aws-cli)
     + [Bluetooth](#bluetooth)
+    + [Boomi (Dell)](#boomi-dell)
     + [Checkmarx](#checkmarx)
     + [Chrome](#chrome)
+    + [CircleCI](#circleci)
     + [CSS](#css)
     + [Cucumber](#cucumber)
     + [Docker](#docker)
@@ -124,6 +128,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [EC2 (AWS)](#ec2-aws)
     + [Eclipse](#eclipse)
     + [Elasticsearch](#elasticsearch)
+    + [EKS (AWS)](#eks-aws)
     + [FluentD](#fluentd)
     + [Git Hook](#git-hook)
     + [Github](#github)
@@ -132,6 +137,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [Grafana](#grafana)
     + [Groovy](#groovy)
     + [H2](#h2)
+    + [Helm](#helm)
     + [HTML5](#html5)
     + [iOS](#ios)
     + [Java](#java)
@@ -148,6 +154,8 @@ When writing documentation involving software, I seem to always find myself addi
     + [Kafka](#kafka)
     + [Kibana](#kibana)
     + [liquibase](#liquibase)
+    + [kubectl](#kubectl)
+    + [Kubernetes](#kubernetes)
     + [Mac OS](#mac-os)
     + [Maven](#maven)
     + [Microsoft Teams](#microsoft-teams)
@@ -171,6 +179,8 @@ When writing documentation involving software, I seem to always find myself addi
     + [Spring Boot Actuator](#spring-boot-actuator)
     + [Spring Boot Test](#spring-boot-test)
     + [Spring MVC](#spring-mvc)
+    + [Swagger](#swagger)
+    + [Terraform](#terraform)
     + [Tomcat (Apache)](#tomcat-apache)
     + [Veracode](#veracode)
     + [Visual Studio Code](#visual-studio-code)
@@ -983,17 +993,37 @@ https://en.wikipedia.org/wiki/Version_control
 
  https://en.wikipedia.org/wiki/Android_(operating_system)
 
+### API Gateway (AWS)
+
+> Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. APIs act as the "front door" for applications to access data, business logic, or functionality from your backend services. Using API Gateway, you can create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications. API Gateway supports containerized and serverless workloads, as well as web applications.
+>
+> API Gateway handles all the tasks involved in accepting and processing up to hundreds of thousands of concurrent API calls, including traffic management, CORS support, authorization and access control, throttling, monitoring, and API version management. API Gateway has no minimum fees or startup costs. You pay for the API calls you receive and the amount of data transferred out and, with the API Gateway tiered pricing model, you can reduce your cost as your API usage scales.
+
+https://aws.amazon.com/api-gateway/
+
 ### AWS
 
 > Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis. Often times, clients will use this in combination with autoscaling.
 
 https://en.wikipedia.org/wiki/Amazon_Web_Services
 
+### AWS CLI
+
+> The AWS Command Line Interface (AWS CLI) is a unified tool to manage your AWS services. With just one tool to download and configure, you can control multiple AWS services from the command line and automate them through scripts.
+
+https://aws.amazon.com/cli/
+
 ### Bluetooth
 
 > Bluetooth is a short-range wireless technology standard that is used for exchanging data between fixed and mobile devices over short distances and building personal area networks (PANs). It employs UHF radio waves in the ISM bands, from 2.402 GHz to 2.48 GHz.[3] It is mainly used as an alternative to wire connections, to exchange files between nearby portable devices and connect cell phones and music players with wireless headphones. In the most widely used mode, transmission power is limited to 2.5 milliwatts, giving it a very short range of up to 10 metres (33 ft).
 
 https://en.wikipedia.org/wiki/Bluetooth
+
+### Boomi (Dell)
+
+> Boomi is a software company that specializes in integration platform as a service, API management, master data management and data preparation. Boomi was founded in Berwyn, Pennsylvania, and first launched its services in 2007.
+
+https://en.wikipedia.org/wiki/Boomi,_LP
 
 ### Checkmarx
 
@@ -1006,6 +1036,12 @@ https://en.wikipedia.org/wiki/Checkmarx
 > Google Chrome is a freeware web browser developed by Google LLC. It was first released on September 2, 2008 for Microsoft Windows, and was later ported to Linux, macOS, iOS and Android. Google Chrome is also the main component of Chrome OS, where it serves as a platform for running web apps.
 
  https://en.wikipedia.org/wiki/Google_Chrome
+
+### CircleCI
+
+> CircleCI is a continuous integration and continuous delivery platform that can be used to implement DevOps practices.
+
+https://en.wikipedia.org/wiki/CircleCI
 
 ### CSS
 
@@ -1061,6 +1097,12 @@ https://en.wikipedia.org/wiki/Eclipse_(software)
 
 https://en.wikipedia.org/wiki/Elasticsearch
 
+### EKS (AWS)
+
+> Amazon EKS is a managed Kubernetes service to run Kubernetes in the AWS cloud and on-premises data centers. In the cloud, Amazon EKS automatically manages the availability and scalability of the Kubernetes control plane nodes responsible for scheduling containers, managing application availability, storing cluster data, and other key tasks. With Amazon EKS, you can take advantage of all the performance, scale, reliability, and availability of AWS infrastructure, as well as integrations with AWS networking and security services. On-premises, EKS provides a consistent, fully-supported Kubernetes solution with integrated tooling and simple deployment to AWS Outposts, virtual machines, or bare metal servers.
+
+https://aws.amazon.com/eks/
+
 ### FluentD 
 
 > Fluentd is a Big Data tool for semi- or un-structured data sets. Like Apache Kafka, it analyzes event logs, application logs, and clickstreams. According to Suonsyrjä and Mikkonen, the "core idea of Fluentd is to be the unifying layer between different types of log inputs and outputs.", Fluentd is available on Linux, Mac OSX, and Windows. 
@@ -1109,9 +1151,10 @@ https://en.wikipedia.org/wiki/Apache_Groovy
 
 https://en.wikipedia.org/wiki/H2_(DBMS)
 
-Helm
+### Helm
 
-What is Helm? Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application. Charts are easy to create, version, share, and publish — so start using Helm and stop the copy-and-paste.
+> What is Helm? Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application. Charts are easy to create, version, share, and publish — so start using Helm and stop the copy-and-paste.
+>
 
 https://helm.sh
 
@@ -1218,6 +1261,18 @@ https://en.wikipedia.org/wiki/Kibana
 > Liquibase is an open-source database-independent library for tracking, managing and applying database schema changes. It was started in 2006 to allow easier tracking of database changes, especially in an agile software development environment
 
 https://en.wikipedia.org/wiki/Liquibase
+
+### kubectl
+
+> Kubernetes provides a command line tool for communicating with a Kubernetes cluster's control plane, using the Kubernetes API.
+
+https://kubernetes.io/docs/reference/kubectl/
+
+### Kubernetes
+
+> Kubernetes is an open-source container orchestration system for automating software deployment, scaling, and management. Originally designed by Google, the project is now maintained by the Cloud Native Computing Foundation. The name Kubernetes originates from Greek, meaning 'helmsman' or 'pilot'.
+
+https://en.wikipedia.org/wiki/Kubernetes
 
 ### Mac OS
 
@@ -1384,6 +1439,18 @@ https://docs.spring.io/spring-boot/docs/2.0.4.RELEASE/reference/html/boot-featur
 > Spring MVC is a Java framework that is used to develop web applications. It is built on a Model-View-Controller (MVC) pattern and possesses all the basic features of a spring framework, such as Dependency Injection, Inversion of Control. The architectural design of a Spring MVC can be used to develop flexible web applications. It basically separates the different aspects of the application, like input logic, UI logic, and business logic. 
 
 https://www.upgrad.com/blog/spring-mvc-flow-diagram
+
+### Swagger
+
+> Swagger is a suite of tools for API developers from SmartBear Software and a former specification upon which the OpenAPI Specification is based. 
+
+https://en.wikipedia.org/wiki/Swagger_(software)
+
+### Terraform
+
+> Terraform is an open-source infrastructure-as-code software tool created by HashiCorp. Users define and provide data center infrastructure using a declarative configuration language known as HashiCorp Configuration Language, or optionally JSON.
+
+https://en.wikipedia.org/wiki/Terraform_(software)
 
 ### Tomcat (Apache)
 
