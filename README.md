@@ -6,6 +6,7 @@ When writing documentation involving software, I seem to always find myself addi
 
 - [Concepts](#concepts)
     + [Agile](#agile)
+    + [API Gateway](#api-gateway)
     + [API Endpoints](#api-endpoints)
     + [API Key](#api-key)
     + [Application Programming Interface (API)](#application-programming-interface-api)
@@ -76,6 +77,7 @@ When writing documentation involving software, I seem to always find myself addi
     + [Relational Database Management System (RDBMS)](#relational-database-management-system-rdbms)
     + [REST](#rest)
     + [Retrospective](#retrospective)
+    + [Reverse Proxy](#reverse-proxy)
     + [Scrum](#scrum)
     + [Service-oriented architecture (SOA)](#service-oriented-architecture-soa)
     + [Sequence Diagram](#sequence-diagram)
@@ -198,6 +200,14 @@ When writing documentation involving software, I seem to always find myself addi
 > Agile is an iterative approach to project management and software development that helps teams deliver value to their customers faster and with fewer headaches. Instead of betting everything on a "big bang" launch, an agile team delivers work in small, but consumable, increments. Requirements, plans, and results are evaluated continuously so teams have a natural mechanism for responding to change quickly. 
 
 https://www.atlassian.com/agile
+
+### API Gateway
+
+> An API gateway is an API management tool that sits between a client and a collection of backend services.
+>
+> An API gateway acts as a reverse proxy to accept all application programming interface (API) calls, aggregate the various services required to fulfill them, and return the appropriate result.
+
+https://www.redhat.com/en/topics/api/what-does-an-api-gateway-do
 
 ### API Endpoints
 
@@ -716,6 +726,12 @@ https://en.wikipedia.org/wiki/Representational_state_transfer
 > A retrospective is anytime your team reflects on the past to improve the future. Between technical and non-technical teams, you can retro on just about anything! Right now, we're hosting a public retrospective on agile software development. Help define the future of agile by adding some of your ideas to our board. 
 
 https://www.atlassian.com/agile/scrum/retrospectives
+
+### Reverse Proxy
+
+> In computer networks, a reverse proxy is an application that sits in front of back-end applications and forwards client requests to those applications. Reverse proxies help increase scalability, performance, resilience and security.
+
+https://en.wikipedia.org/wiki/Reverse_proxy
 
 ### Scrum
 
